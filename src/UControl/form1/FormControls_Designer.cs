@@ -2,7 +2,7 @@
 using System.ComponentModel.Design;
 using System.Windows.Forms;
 using Lamedal_UIWinForms.domain.Enumerals;
-using LaMedalPort.UIWindows.libUI.WinForms.UIDesigner;
+using Lamedal_UIWinForms.UControl.UIDesigner;
 
 namespace Lamedal_UIWinForms.UControl.form1
 {

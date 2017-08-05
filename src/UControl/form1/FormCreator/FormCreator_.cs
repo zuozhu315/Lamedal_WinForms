@@ -11,7 +11,7 @@ using LamedalCore.zz;
 using Lamedal_UIWinForms.lib.dotNet;
 using Lamedal_UIWinForms.libUI.WinForms.UIDesigner;
 using Lamedal_UIWinForms.zzz;
-using UIDesigner_Service = LaMedalPort.UIWindows.libUI.WinForms.UIDesigner.UIDesigner_Service;
+using UIDesigner_Service = Lamedal_UIWinForms.UControl.UIDesigner.UIDesigner_Service;
 
 namespace Lamedal_UIWinForms.UControl.form1.FormCreator
 {

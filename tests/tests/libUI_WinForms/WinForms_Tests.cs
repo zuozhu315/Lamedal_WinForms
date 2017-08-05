@@ -1,7 +1,7 @@
 ﻿using System;
 using Xunit;
 
-namespace Lamedal_UIWinForms.Test.tests
+namespace Lamedal_UIWinForms.Test.tests.libUI_WinForms
 {
     public sealed class WinForms_Tests
     {

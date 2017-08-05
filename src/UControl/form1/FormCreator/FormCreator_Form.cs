@@ -13,9 +13,9 @@ using Lamedal_UIWinForms.lib.dotNet;
 using Lamedal_UIWinForms.libUI.WinForms.UIDesigner;
 using Lamedal_UIWinForms.UControl.Input;
 using Lamedal_UIWinForms.zzz;
-using UIDesigner_Component = LaMedalPort.UIWindows.libUI.WinForms.UIDesigner.UIDesigner_Component;
-using UIDesigner_Service = LaMedalPort.UIWindows.libUI.WinForms.UIDesigner.UIDesigner_Service;
-using UIDesigner_Tools = LaMedalPort.UIWindows.libUI.WinForms.UIDesigner.UIDesigner_Tools;
+using UIDesigner_Component = Lamedal_UIWinForms.UControl.UIDesigner.UIDesigner_Component;
+using UIDesigner_Service = Lamedal_UIWinForms.UControl.UIDesigner.UIDesigner_Service;
+using UIDesigner_Tools = Lamedal_UIWinForms.UControl.UIDesigner.UIDesigner_Tools;
 
 namespace Lamedal_UIWinForms.UControl.form1.FormCreator
 {

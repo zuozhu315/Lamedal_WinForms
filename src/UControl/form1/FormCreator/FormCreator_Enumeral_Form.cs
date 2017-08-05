@@ -9,8 +9,8 @@ using LamedalCore.zz;
 using Lamedal_UIWinForms.domain.Enumerals;
 using Lamedal_UIWinForms.lib.dotNet;
 using Lamedal_UIWinForms.UControl.Input;
+using Lamedal_UIWinForms.UControl.UIDesigner;
 using Lamedal_UIWinForms.zzz;
-using LaMedalPort.UIWindows.libUI.WinForms.UIDesigner;
 
 namespace Lamedal_UIWinForms.UControl.form1.FormCreator
 {

@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel;
 using System.ComponentModel.Design;
-using LaMedalPort.UIWindows.libUI.WinForms.UIDesigner;
+using Lamedal_UIWinForms.UControl.UIDesigner;
 
 namespace Lamedal_UIWinForms.UControl.form1.FormCreator
 {
