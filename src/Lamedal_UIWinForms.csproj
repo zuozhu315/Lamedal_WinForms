@@ -6,7 +6,7 @@
     <Authors>Perez Lamed van Niekerk</Authors>
     <TargetFrameworks>net461</TargetFrameworks>
     <AssemblyName>Lamedal_UIWinForms</AssemblyName>
-    <PackageId>LamedaLamedal_UIWinFormslCore</PackageId>
+    <PackageId>Lamedal_UIWinForms</PackageId>
     <PackageReleaseNotes>
 Lamedal_UIWinForms v0.0.1 
 ==========================
