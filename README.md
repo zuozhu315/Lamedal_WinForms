@@ -2,7 +2,7 @@
 Library of WinForms controls
 
 ## State
-* Bluild on [AppVeyor](https://ci.appveyor.com/projects)
+* Build on [AppVeyor](https://ci.appveyor.com/projects)
 
 Application           |    Platform       | Build                 |      Tests        | Coverage 
 ----------------------|-------------------|-----------------------|-------------------|-----------------------
