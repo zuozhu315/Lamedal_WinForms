@@ -58,11 +58,15 @@ namespace Lamedal_UIWinForms.libUI.AvalonEdit
         /// </summary>
         /// <param name="parentControl">The parent control.</param>
         /// <param name="host">The host panel.</param>
-        public TextEditor TextEditor_Create(ContainerControl parentControl, ElementHost host)
+        public TextEditor TextEditor_Create(Control parentControl, ElementHost host)
         {
             var textEditor = new TextEditor();
             host.Child = textEditor;
             parentControl.Controls.Add(host);
+            // Load settings for c#
+            TextEditor_Options(textEditor);
+            TextEditor_Foldings(textEditor);
+            TextEditor_Highlight(textEditor);
             return textEditor;
         }
     }

@@ -29,6 +29,12 @@ Lamedal_UIWinForms v0.0.1
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
   </PropertyGroup>
   <ItemGroup>
+    <None Include="Assets\ResourcesIcons\BlueprintBlocks.ico" />
+    <None Include="Assets\ResourcesIcons\BlueprintProcess.ico" />
+    <None Include="Assets\ResourcesIcons\BlueprintRound.ico" />
+    <None Include="Assets\ResourcesIcons\BlueprintRoundProcess.ico" />
+  </ItemGroup>
+  <ItemGroup>
     <PackageReference Include="HtmlRenderer.Core" Version="1.5.0.6" />
     <PackageReference Include="HtmlRenderer.WinForms" Version="1.5.0.6" />
     <PackageReference Include="AvalonEdit" Version="5.0.3" />
@@ -57,6 +63,76 @@ Lamedal_UIWinForms v0.0.1
     <Reference Include="WindowsFormsIntegration" />    
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="Assets\ActorBody.Designer.cs">
+      <DependentUpon>ActorBody.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="Assets\ActorFace.Designer.cs">
+      <DependentUpon>ActorFace.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="Assets\DataBool.Designer.cs">
+      <DependentUpon>DataBool.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="Assets\DataDB.Designer.cs">
+      <DependentUpon>DataDB.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="Assets\DataNumbers.Designer.cs">
+      <DependentUpon>DataNumbers.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="Assets\DataTree.Designer.cs">
+      <DependentUpon>DataTree.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="Assets\IconBasic.Designer.cs">
+      <DependentUpon>IconBasic.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="Assets\ShapeArrow.Designer.cs">
+      <DependentUpon>ShapeArrow.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="Assets\ShapeOther.Designer.cs">
+      <DependentUpon>ShapeOther.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="Assets\ToolAction.Designer.cs">
+      <DependentUpon>ToolAction.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="Assets\ToolChart.Designer.cs">
+      <DependentUpon>ToolChart.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="Assets\ToolEdit.Designer.cs">
+      <DependentUpon>ToolEdit.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="Assets\ToolIO.Designer.cs">
+      <DependentUpon>ToolIO.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="Assets\ToolOther.Designer.cs">
+      <DependentUpon>ToolOther.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
     <Compile Update="UControl\button\Button_.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -147,6 +223,27 @@ Lamedal_UIWinForms v0.0.1
     <Compile Update="UControl\Forms\Dialog\Progress_WaitCursor_Form.Designer.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="UControl\images\ImageList_.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="UControl\images\ImageList_.Designer.cs">
+      <DependentUpon>ImageList_.cs</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="UControl\images\ImageSetup.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="UControl\images\ImageSetup.Designer.cs">
+      <DependentUpon>ImageSetup.cs</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="UControl\images\ImageSetup_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UControl\images\ImageSetup_Form.Designer.cs">
+      <DependentUpon>ImageSetup_Form.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="UControl\Input\Input_Control.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -204,5 +301,66 @@ Lamedal_UIWinForms v0.0.1
     <Compile Update="UControl\_Designer\TextBox_.cs">
       <SubType>Component</SubType>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="Assets\ActorBody.resx">
+      <LastGenOutput>ActorBody.Designer.cs</LastGenOutput>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Assets\ActorFace.resx">
+      <LastGenOutput>ActorFace.Designer.cs</LastGenOutput>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Assets\DataBool.resx">
+      <LastGenOutput>DataBool.Designer.cs</LastGenOutput>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Assets\DataDB.resx">
+      <LastGenOutput>DataDB.Designer.cs</LastGenOutput>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Assets\DataNumbers.resx">
+      <LastGenOutput>DataNumbers.Designer.cs</LastGenOutput>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Assets\DataTree.resx">
+      <LastGenOutput>DataTree.Designer.cs</LastGenOutput>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Assets\IconBasic.resx">
+      <LastGenOutput>IconBasic.Designer.cs</LastGenOutput>
+      <Generator>ResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Assets\ShapeArrow.resx">
+      <LastGenOutput>ShapeArrow.Designer.cs</LastGenOutput>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Assets\ShapeOther.resx">
+      <LastGenOutput>ShapeOther.Designer.cs</LastGenOutput>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Assets\ToolAction.resx">
+      <LastGenOutput>ToolAction.Designer.cs</LastGenOutput>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Assets\ToolChart.resx">
+      <LastGenOutput>ToolChart.Designer.cs</LastGenOutput>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Assets\ToolEdit.resx">
+      <LastGenOutput>ToolEdit.Designer.cs</LastGenOutput>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Assets\ToolIO.resx">
+      <LastGenOutput>ToolIO.Designer.cs</LastGenOutput>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Assets\ToolOther.resx">
+      <LastGenOutput>ToolOther.Designer.cs</LastGenOutput>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UControl\images\ImageSetup_Form.resx">
+      <DependentUpon>ImageSetup_Form.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>

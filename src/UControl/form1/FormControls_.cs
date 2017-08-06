@@ -7,8 +7,6 @@ using Lamedal_UIWinForms.domain.Enumerals;
 using Lamedal_UIWinForms.libUI.WinForms.UIDesigner;
 using Lamedal_UIWinForms.UControl.button;
 using Lamedal_UIWinForms.zzz;
-using UIDesigner_Service = Lamedal_UIWinForms.UControl.UIDesigner.UIDesigner_Service;
-using UIDesigner_Tools = Lamedal_UIWinForms.UControl.UIDesigner.UIDesigner_Tools;
 
 namespace Lamedal_UIWinForms.UControl.form1
 {

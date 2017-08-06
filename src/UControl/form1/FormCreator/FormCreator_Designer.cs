@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel;
 using System.ComponentModel.Design;
-using Lamedal_UIWinForms.UControl.UIDesigner;
+using Lamedal_UIWinForms.libUI.WinForms.UIDesigner;
 
 namespace Lamedal_UIWinForms.UControl.form1.FormCreator
 {

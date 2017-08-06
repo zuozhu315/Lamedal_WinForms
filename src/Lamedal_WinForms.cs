@@ -4,6 +4,7 @@ using LamedalCore.domain.Attributes;
 using LamedalCore.domain.Enumerals;
 using LamedalCore.lib;
 using LamedalCore.Types;
+using Lamedal_UIWinForms.Assets;
 using Lamedal_UIWinForms.lib;
 using Lamedal_UIWinForms.libUI;
 using Lamedal_UIWinForms.libUI.WinForms.UIDesigner;
@@ -30,6 +31,17 @@ namespace Lamedal_UIWinForms
         }
         #endregion
 
+        #region Assets
+        /// <summary>
+        /// Gets the Assets library methods.
+        /// </summary>
+        public Assets_ Assets
+        {
+            get { return _Assets ?? (_Assets = new Assets_()); }
+        }
+        private Assets_ _Assets;
+        #endregion
+
         #region lib
         /// <summary>
         /// Gets the lib library methods.
@@ -52,8 +64,6 @@ namespace Lamedal_UIWinForms
         private libUI2_ _libUI;
         #endregion
 
-
-
         #region UIDesigner
         /// <summary>
         /// Gets the UIDesigner library methods.
@@ -64,7 +74,6 @@ namespace Lamedal_UIWinForms
         }
         private UIDesigner_ _UIDesigner;
         #endregion
-
 
         #region About messages
         /// <summary>Shows an about message of the LamedaL library.</summary>
