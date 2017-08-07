@@ -5,11 +5,11 @@ namespace Lamedal_UIWinForms.Test
     /// <summary>
     /// 
     /// </summary>
-    public partial class form_cSharpCode : Form
+    public partial class Form_cSharpCode : Form
     {
         #region Init
 
-        public form_cSharpCode()
+        public Form_cSharpCode()
         {
             InitializeComponent();
         }

@@ -5,7 +5,7 @@ using Lamedal_UIWinForms.UControl.images;
 
 namespace Lamedal_UIWinForms.Test
 {
-    partial class form_cSharpCode
+    partial class Form_cSharpCode
     {
 
         /// <summary>
@@ -35,7 +35,7 @@ namespace Lamedal_UIWinForms.Test
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(form_cSharpCode));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_cSharpCode));
             this.groupMain = new System.Windows.Forms.GroupBox();
             this.groupDetail = new System.Windows.Forms.GroupBox();
             this.groupHeader = new System.Windows.Forms.GroupBox();
@@ -321,14 +321,14 @@ namespace Lamedal_UIWinForms.Test
             this.buttonHide.UseVisualStyleBackColor = true;
             this.buttonHide.Click += new System.EventHandler(this.buttonHide_Click);
             // 
-            // form_cSharpCode
+            // Form_cSharpCode
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(334, 323);
             this.Controls.Add(this.groupMain);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "form_cSharpCode";
+            this.Name = "Form_cSharpCode";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Code Convertor version 0.1.0";
             this.TopMost = true;

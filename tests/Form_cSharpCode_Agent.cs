@@ -11,7 +11,7 @@ namespace Lamedal_UIWinForms.Test
         /// Automatic execute this code on form load.
         /// </summary>
         /// <param name="form">The c sharp code form</param>
-        public static void AutoExec(form_cSharpCode form)
+        public static void AutoExec(Form_cSharpCode form)
         {
             form.groupHeader.Text = "";
             form.groupDetail.Text = "";
@@ -36,7 +36,7 @@ namespace Lamedal_UIWinForms.Test
         /// Size form to medium.
         /// </summary>
         /// <param name="form">The c sharp code form</param>
-        public static void Size_Medium(form_cSharpCode form)
+        public static void Size_Medium(Form_cSharpCode form)
         {
             form.Width = 500;
             form.Height = 400;
@@ -46,7 +46,7 @@ namespace Lamedal_UIWinForms.Test
         /// Size form to large.
         /// </summary>
         /// <param name="form">The c sharp code form</param>
-        public static void Size_Large(form_cSharpCode form)
+        public static void Size_Large(Form_cSharpCode form)
         {
             form.Width = 500;
             form.Height = 700;
@@ -93,7 +93,7 @@ namespace Lamedal_UIWinForms.Test
         /// Hides the buttons on the form.
         /// </summary>
         /// <param name="form">The c sharp code form</param>
-        public static void Buttons_Hide(form_cSharpCode form)
+        public static void Buttons_Hide(Form_cSharpCode form)
         {
             form.groupHeader.Visible = false;
             form.buttonUnHide.Visible = true;
@@ -104,7 +104,7 @@ namespace Lamedal_UIWinForms.Test
         /// Unhides the buttons.
         /// </summary>
         /// <param name="form">The c sharp code form</param>
-        public static void Buttons_UnHide(form_cSharpCode form)
+        public static void Buttons_UnHide(Form_cSharpCode form)
         {
             form.groupHeader.Visible = true;
             form.buttonUnHide.Visible = false;
@@ -120,7 +120,7 @@ namespace Lamedal_UIWinForms.Test
         /// Paste code from the clipboard.
         /// </summary>
         /// <param name="form">The c sharp code form</param>
-        public static void Editor_PasteCodeFromClipboard(form_cSharpCode form)
+        public static void Editor_PasteCodeFromClipboard(Form_cSharpCode form)
         {
             form.TopMost = true;
             string code = "".zClipboard_GetStrFrom();
@@ -134,7 +134,7 @@ namespace Lamedal_UIWinForms.Test
         /// Clears the editor.
         /// </summary>
         /// <param name="form">The c sharp code form</param>
-        public static void Editor_Clear(form_cSharpCode form)
+        public static void Editor_Clear(Form_cSharpCode form)
         {
             //form.cSharpEdit1.ctrlTextEditor.Text = "";
         }
