@@ -28,7 +28,7 @@ namespace Lamedal_UIWinForms.libUI.AvalonEdit
         /// <summary>
         /// Create <see cref="NewFolding"/>s for the specified document.
         /// </summary>
-        public IEnumerable<NewFolding> CreateNewFoldings(TextDocument document, out int firstErrorOffset)
+        public new IEnumerable<NewFolding> CreateNewFoldings(TextDocument document, out int firstErrorOffset)
         {
             firstErrorOffset = -1;
             return CreateNewFoldings(document);

@@ -12,7 +12,7 @@ namespace Lamedal_UIWinForms.libUI.WinForms
     public sealed class WinForms2_Dialogs : WinForms_Dialog_Simple
     {
         private Dialog_Memo frmDialog;
-        private Dialog_InputBox frmInputBox;
+        //private Dialog_InputBox frmInputBox;
 
         /// <summary>Show dialog</summary>
         public DialogResult Inputbox(string msg, ref string result,

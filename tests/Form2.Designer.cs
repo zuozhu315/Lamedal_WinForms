@@ -30,7 +30,6 @@
         {
             this.elementHost1 = new System.Windows.Forms.Integration.ElementHost();
             this.panel_1 = new Lamedal_UIWinForms.UControl.panel.Panel_();
-            this.buttonLoad = new Lamedal_UIWinForms.UControl.button.Button_();
             this.panel_2 = new Lamedal_UIWinForms.UControl.panel.Panel_();
             this.panel_1.SuspendLayout();
             this.panel_2.SuspendLayout();
@@ -49,7 +48,7 @@
             // panel_1
             // 
             this.panel_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel_1.Controls.Add(this.buttonLoad);
+            //this.panel_1.Controls.Add(this.buttonLoad);
             this.panel_1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_1.Location = new System.Drawing.Point(0, 0);
             this.panel_1.Name = "panel_1";
@@ -57,18 +56,6 @@
             this.panel_1.Parent_Panel = null;
             this.panel_1.Size = new System.Drawing.Size(396, 38);
             this.panel_1.TabIndex = 1;
-            // 
-            // buttonLoad
-            // 
-            this.buttonLoad.Dock = System.Windows.Forms.DockStyle.Left;
-            this.buttonLoad.Location = new System.Drawing.Point(0, 0);
-            this.buttonLoad.Name = "buttonLoad";
-            this.buttonLoad.Parent_GroupBox = null;
-            this.buttonLoad.Parent_Panel = this.panel_1;
-            this.buttonLoad.Size = new System.Drawing.Size(86, 36);
-            this.buttonLoad.TabIndex = 0;
-            this.buttonLoad.Text = "Load";
-            this.buttonLoad.Click += new System.EventHandler(this.buttonLoad_Click);
             // 
             // panel_2
             // 
@@ -100,7 +87,6 @@
 
         private System.Windows.Forms.Integration.ElementHost elementHost1;
         private UControl.panel.Panel_ panel_1;
-        private UControl.button.Button_ buttonLoad;
         private UControl.panel.Panel_ panel_2;
     }
 }

@@ -33,7 +33,7 @@ namespace Lamedal_UIWinForms.UControl.images
 
         private readonly ImageSetup _Control;
         private readonly DesignerActionUIService _designerActionUIService;
-        private ImageSetup_Form _frmImageResouce;
+        //private ImageSetup_Form _frmImageResouce;
 
         public ImageSetup_ActionList(IComponent component) : base(component)
         {

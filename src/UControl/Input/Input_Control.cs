@@ -90,7 +90,7 @@ namespace Lamedal_UIWinForms.UControl.Input
                 //if (control.Dock != DockStyle.None) this.Dock = control.Dock;
 
             }
-            catch (Exception e)
+            catch (Exception)
             {
                 throw;
             }

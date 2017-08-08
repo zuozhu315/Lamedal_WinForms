@@ -123,7 +123,7 @@ namespace Lamedal_UIWinForms.libUI.WinForms.Controls
                     if (stop) return;
                 }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 throw;
             }

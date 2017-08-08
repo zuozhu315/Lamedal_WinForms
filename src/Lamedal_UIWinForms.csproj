@@ -1,14 +1,15 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
+  <Authors>PerezLamed</Authors>
     <Description>The quest to solve a problem once and to use the one solution everywhere.</Description>
     <Copyright>MIT license. Copyright (c) 2017 and present - Perez Lamed van Niekerk. https://sites.google.com/site/lamedalwiki/</Copyright>
-    <AssemblyTitle>LamedaL WinForms library.</AssemblyTitle>
+    <AssemblyTitle>LamedaL WinForms Controls library.</AssemblyTitle>
     <Authors>Perez Lamed van Niekerk</Authors>
     <TargetFrameworks>net461</TargetFrameworks>
     <AssemblyName>Lamedal_UIWinForms</AssemblyName>
     <PackageId>Lamedal_UIWinForms</PackageId>
     <PackageReleaseNotes>
-Lamedal_UIWinForms v0.0.1 
+Lamedal_UIWinForms v0.0.1 - alfa2 
 ==========================
 * First release of Lamedal UI Winforms library.
 </PackageReleaseNotes>
@@ -24,9 +25,11 @@ Lamedal_UIWinForms v0.0.1
     <GenerateNeutralResourcesLanguageAttribute>false</GenerateNeutralResourcesLanguageAttribute>
     <GenerateAssemblyVersionAttribute>false</GenerateAssemblyVersionAttribute>
     <GenerateAssemblyFileVersionAttribute>false</GenerateAssemblyFileVersionAttribute>
-    <Version>0.0.1-alfa1</Version>
+    <Version>0.0.1-alfa2</Version>
     <RepositoryType>c#</RepositoryType>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageTags>WinForms Controls</PackageTags>
+    <RepositoryUrl>https://github.com/perezLamed/Lamedal_WinForms/</RepositoryUrl>
   </PropertyGroup>
   <ItemGroup>
     <None Include="Assets\ResourcesIcons\BlueprintBlocks.ico" />
