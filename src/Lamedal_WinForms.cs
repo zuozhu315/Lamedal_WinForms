@@ -8,6 +8,7 @@ using Lamedal_UIWinForms.Assets;
 using Lamedal_UIWinForms.lib;
 using Lamedal_UIWinForms.libUI;
 using Lamedal_UIWinForms.libUI.WinForms.UIDesigner;
+using System.Runtime;
 
 namespace Lamedal_UIWinForms
 {
@@ -145,6 +146,10 @@ namespace Lamedal_UIWinForms
         private Types_ _Types;
         #endregion
 
+        private void System_Runtime()
+        {
+            var configuredTaskAwaitable = new System.Runtime.CompilerServices.ConfiguredTaskAwaitable();
+        }
 
     }
 }

@@ -6,8 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
 using LamedalCore;
-using LamedalCore.zz;
-using Lamedal_UIWinForms.zzz;
+//using Lamedal_UIWinForms.zzz;
 
 namespace Lamedal_UIWinForms.libUI.WinForms.Controls
 {
@@ -227,12 +226,16 @@ namespace Lamedal_UIWinForms.libUI.WinForms.Controls
         private void MoveToContainer(Control sender, Control moveToContainer, bool errorIfOtherControls = false)
         {
             // This method is private to so that the moveToContainer types can be filtered with overload methods - do not make it public (rather add an overload method)
+            // Pre checks to ensure save opperation
+            if (sender == null) return;
             if (moveToContainer == null) return;
             if (moveToContainer.Parent == null) return;
+
             if ((moveToContainer is Panel || moveToContainer is GroupBox) == false)
             {
-                "Error: The contrainer to move the control to, must be a Panel or a Group!".zOk();
-                return;
+                var ex = new InvalidOperationException("Error: The contrainer to move the control to, must be a Panel or a Group!");
+                _lamed.Logger.LogLibraryMsg(ex);
+                throw ex;
             }
 
             if (_lamedWin.libUI.WinForms.Controls.Control.IsHostedInDesigner(sender) == false) return;
@@ -240,7 +243,7 @@ namespace Lamedal_UIWinForms.libUI.WinForms.Controls
             if (moveToContainer.Controls.Count != 0 && errorIfOtherControls)
             {
                 var ex = new InvalidOperationException("Error! There are other controls on groupBox '" + moveToContainer.ToString() + "'!");
-                ex.zLogLibraryMsg();
+                _lamed.Logger.LogLibraryMsg(ex);
                 throw ex;
             }
             moveToContainer.Controls.Add(sender);

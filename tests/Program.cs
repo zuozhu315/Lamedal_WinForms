@@ -21,5 +21,10 @@ namespace Lamedal_UIWinForms.Test
             // Application.Run(new Form_cSharpCode());
             
         }
+
+        private static void System_Runtime()
+        {
+            var configuredTaskAwaitable = new System.Runtime.CompilerServices.ConfiguredTaskAwaitable();
+        }
     }
 }

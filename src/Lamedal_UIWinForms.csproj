@@ -44,6 +44,7 @@ Lamedal_UIWinForms v0.0.1 - alfa2
     <PackageReference Include="JetBrains.Annotations" Version="10.4.0" />
     <PackageReference Include="LamedalCore_Templates" Version="0.0.2" />
     <PackageReference Include="LamedalCore" Version="1.1.6-alfa4" />
+    <PackageReference Include="System.Runtime" Version="4.3.0" />
     <!--<ProjectReference Include="..\..\LamedalCore\src\LamedalCore.csproj" /> -->
     <Reference Include="PresentationCore">
       <HintPath>..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\PresentationCore.dll</HintPath>
@@ -57,6 +58,10 @@ Lamedal_UIWinForms v0.0.1 - alfa2
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Design" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime">
+      <HintPath>..\packages\System.Runtime.4.3.0\lib\net462\System.Runtime.dll</HintPath>
+      <Private>true</Private>
+    </Reference>
     <Reference Include="System.Xaml" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq" />

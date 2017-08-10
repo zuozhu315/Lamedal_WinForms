@@ -2,6 +2,7 @@
 using System.ComponentModel;
 using System.Windows.Forms;
 using Lamedal_UIWinForms.libUI.Interfaces;
+using Lamedal_UIWinForms.libUI.WinForms.Controls;
 
 namespace Lamedal_UIWinForms.UControl.panel
 {
@@ -43,7 +44,11 @@ namespace Lamedal_UIWinForms.UControl.panel
         public GroupBox Parent_GroupBox
         {
             get { return this.Parent as GroupBox; }
-            set { IamWindows.libUI.WinForms.Controls.Control.MoveToContainer(this, value); }
+            set {
+                var forms = IamWindows.libUI.WinForms;
+                Controls_Control control = forms.Controls.Control;
+                control.MoveToContainer(this, value);
+            }
         }
 
         /// <summary>
