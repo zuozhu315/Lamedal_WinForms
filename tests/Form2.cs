@@ -26,5 +26,6 @@ namespace Lamedal_UIWinForms.Test
             _editor = _lamedWin.libUI.AvalonEdit.TextEditor_Create(panel_2, elementHost1);
             _editor.Text = "test";
         }
+        
     }
 }
