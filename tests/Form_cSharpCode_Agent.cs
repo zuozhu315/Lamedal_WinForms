@@ -1,6 +1,7 @@
 ﻿using System.Windows.Forms;
 using LamedalCore.zz;
 using Lamedal_UIWinForms.zzz;
+using LamedalCore_Templates;
 
 namespace Lamedal_UIWinForms.Test
 {
