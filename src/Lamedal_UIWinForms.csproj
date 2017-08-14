@@ -1,17 +1,26 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
   <Authors>PerezLamed</Authors>
-    <Description>The quest to solve a problem once and to use the one solution everywhere.</Description>
+    <Description>Library of enhancements to the most used .NET462 Winforms controls. 
+    The Input_Control combines a [Label_ and TextBox_] or [Label_ and EditMask] or [Label_ and ComboBox_] or [Label_ and ListBox_] or [Label_ and DateTime] or [Label_ and CheckBox_] or [Label_ and Button_],  or [Label_ and RadioButton] to provide one control that can capture any type of data.
+    </Description>
     <Copyright>MIT license. Copyright (c) 2017 and present - Perez Lamed van Niekerk. https://sites.google.com/site/lamedalwiki/</Copyright>
     <AssemblyTitle>LamedaL WinForms Controls library.</AssemblyTitle>
+    <Title>LamedaL WinForms Controls library.</Title>
     <Authors>Perez Lamed van Niekerk</Authors>
     <TargetFramework>net462</TargetFramework>
     <AssemblyName>Lamedal_UIWinForms</AssemblyName>
     <PackageId>Lamedal_UIWinForms</PackageId>
     <PackageReleaseNotes>
-Lamedal_UIWinForms v0.0.1 - alfa2 
-==========================
-* First release of Lamedal UI Winforms library.
+Lamedal_UIWinForms v0.0.1 
+=========================
+ - Fixes major bugs on windows controls. 
+ - Moved to .NET462 in order to fix compatibility errors with .NET Core
+ - Added c# editor control
+ - Ensure Appveyor build successfully.
+ - Controls: CheckBox_, ComboBox_, GroupBox_, Label_, ListBox_, TextBox_, Button_, Button_Standard, Form_, Form_Controls_, ImageList_, ImageSetup, Input_Control, Panel_, Panel_Transparent, Panel_Transparent_Manager. 
+
+ Lamedal_UIWinForms v0.0.1-alfa1: First release of Lamedal UI Winforms library.
 </PackageReleaseNotes>
     <PackageIconUrl>https://sites.google.com/site/lamedalwiki/Project-News/lamedalporttonetcore10/Lamedal15.png</PackageIconUrl>
     <PackageProjectUrl>https://sites.google.com/site/lamedalwiki/</PackageProjectUrl>
@@ -25,7 +34,7 @@ Lamedal_UIWinForms v0.0.1 - alfa2
     <GenerateNeutralResourcesLanguageAttribute>false</GenerateNeutralResourcesLanguageAttribute>
     <GenerateAssemblyVersionAttribute>false</GenerateAssemblyVersionAttribute>
     <GenerateAssemblyFileVersionAttribute>false</GenerateAssemblyFileVersionAttribute>
-    <Version>0.0.1-alfa2</Version>
+    <Version>0.0.1</Version>
     <RepositoryType>c#</RepositoryType>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageTags>WinForms Controls</PackageTags>
