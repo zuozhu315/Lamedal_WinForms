@@ -1,4 +1,4 @@
-# ![alt tag](https://sites.google.com/site/lamedalwiki/Project-News/lamedalporttonetcore10/Lamedal15.png) Lamedal_UIWinForms 0.0.1-alfa1
+# ![alt tag](https://sites.google.com/site/lamedalwiki/Project-News/lamedalporttonetcore10/Lamedal15.png) Lamedal_UIWinForms 0.0.1
 Library of WinForms controls
 -------------------------------------------------------------------------------------
 > <i> The **best programmers** in the world can deliver software before deadlines, under budget, 
