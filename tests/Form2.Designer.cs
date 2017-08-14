@@ -41,7 +41,7 @@
             this.elementHost1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.elementHost1.Location = new System.Drawing.Point(0, 0);
             this.elementHost1.Name = "elementHost1";
-            this.elementHost1.Size = new System.Drawing.Size(396, 319);
+            this.elementHost1.Size = new System.Drawing.Size(396, 223);
             this.elementHost1.TabIndex = 0;
             this.elementHost1.Text = "elementHost1";
             this.elementHost1.Child = null;
@@ -78,17 +78,18 @@
             this.panel_2.Name = "panel_2";
             this.panel_2.Parent_GroupBox = null;
             this.panel_2.Parent_Panel = null;
-            this.panel_2.Size = new System.Drawing.Size(396, 319);
+            this.panel_2.Size = new System.Drawing.Size(396, 223);
             this.panel_2.TabIndex = 2;
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(396, 357);
+            this.ClientSize = new System.Drawing.Size(396, 261);
             this.Controls.Add(this.panel_2);
             this.Controls.Add(this.panel_1);
             this.Name = "Form2";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form2";
             this.panel_1.ResumeLayout(false);
             this.panel_2.ResumeLayout(false);

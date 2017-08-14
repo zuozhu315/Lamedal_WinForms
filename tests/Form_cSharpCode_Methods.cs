@@ -1,24 +1,27 @@
 ﻿using System.Windows.Forms;
+using ICSharpCode.AvalonEdit;
 using LamedalCore.zz;
 using Lamedal_UIWinForms.zzz;
 using LamedalCore_Templates;
 
 namespace Lamedal_UIWinForms.Test
 {
-    public static class Form_cSharpCode_Agent
+    public static class Form_cSharpCode_Methods
     {
-
         /// <summary>
         /// Automatic execute this code on form load.
         /// </summary>
         /// <param name="form">The c sharp code form</param>
-        public static void AutoExec(Form_cSharpCode form)
+        /// <param name="editor">The editor.</param>
+        public static void AutoExec(Form_cSharpCode form, out TextEditor editor)
         {
             form.groupHeader.Text = "";
             form.groupDetail.Text = "";
             form.Top = 70;
             Size_Small(form);
             Move_RightEdge(form);
+            editor = Lamedal_WinForms.Instance.libUI.AvalonEdit.TextEditor_Create(form.groupDetail, form.elementHost1);
+
         }
 
         #region Size
@@ -128,7 +131,7 @@ namespace Lamedal_UIWinForms.Test
             string[] lines = code.zConvert_Array_FromStr("".NL()).ToArray();
             lines = lines.zTrimLeft();
             code = lines.zTo_Str("".NL());
-            //form.cSharpEdit1.Setup(code);
+            form._editor.Text =code;
         }
 
         /// <summary>
@@ -137,7 +140,7 @@ namespace Lamedal_UIWinForms.Test
         /// <param name="form">The c sharp code form</param>
         public static void Editor_Clear(Form_cSharpCode form)
         {
-            //form.cSharpEdit1.ctrlTextEditor.Text = "";
+            form._editor.Text = "";
         }
 
         #endregion

@@ -160,11 +160,11 @@ namespace Lamedal_UIWinForms.libUI.WinForms
         public void Screen_MoveRightEdge(Form form)
         {
             var screen = Screen.FromControl(form);
-            var screen2 = Screen.PrimaryScreen;
-            int left = 0;
-            if (screen.Equals(screen2) == false) left = screen2.WorkingArea.Width;
+            //var screen2 = Screen.PrimaryScreen;
+            //int left = 0;
+            //if (screen.Equals(screen2) == false) left = screen2.WorkingArea.Width;
 
-            form.Left = left + screen.WorkingArea.Width - form.Width;
+            form.Left = screen.WorkingArea.Right - form.Width;
         }
 
         /// <summary>Move form to the top or bottom edge screen. If form is at the top it will be moved to the bottom and visa versa.</summary>
@@ -211,11 +211,12 @@ namespace Lamedal_UIWinForms.libUI.WinForms
         public void Screen_MoveLeftEdge(Form form)
         {
             var screen = Screen.FromControl(form);
-            var screen2 = Screen.PrimaryScreen;
-            int left = 0;
-            if (screen.Equals(screen2) == false) left = screen2.WorkingArea.Width;
+            form.Left = screen.WorkingArea.Left + 10;
+            //var screen2 = Screen.PrimaryScreen;
+            //int left = 0;
+            //if (screen.Equals(screen2) == false) left = screen2.WorkingArea.Width;
 
-            form.Left = left + 10;
+            //form.Left = left + 10;
         }
 
         /// <summary>

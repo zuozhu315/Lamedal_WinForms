@@ -38,23 +38,24 @@ namespace Lamedal_UIWinForms.Test
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_cSharpCode));
             this.groupMain = new System.Windows.Forms.GroupBox();
             this.groupDetail = new System.Windows.Forms.GroupBox();
+            this.elementHost1 = new System.Windows.Forms.Integration.ElementHost();
+            this.buttonPaste2 = new Lamedal_UIWinForms.UControl.button.Button_();
+            this.buttonUnHide = new Lamedal_UIWinForms.UControl.button.Button_();
             this.groupHeader = new System.Windows.Forms.GroupBox();
+            this.panel_Dock = new Lamedal_UIWinForms.UControl.panel.Panel_();
+            this.buttonRight = new Lamedal_UIWinForms.UControl.button.Button_();
+            this.buttonTopBottom = new Lamedal_UIWinForms.UControl.button.Button_();
+            this.buttonLeft = new Lamedal_UIWinForms.UControl.button.Button_();
+            this.panel_Size = new Lamedal_UIWinForms.UControl.panel.Panel_();
+            this.buttonLarge = new Lamedal_UIWinForms.UControl.button.Button_();
+            this.buttonMedium = new Lamedal_UIWinForms.UControl.button.Button_();
+            this.buttonSmall = new Lamedal_UIWinForms.UControl.button.Button_();
+            this.panel_1 = new Lamedal_UIWinForms.UControl.panel.Panel_();
+            this.buttonClear = new Lamedal_UIWinForms.UControl.button.Button_();
+            this.buttonPaste = new Lamedal_UIWinForms.UControl.button.Button_();
+            this.buttonHide = new Lamedal_UIWinForms.UControl.button.Button_();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.imageSetup1 = new ImageSetup(this.components);
-            this.buttonPaste2 = new Button_();
-            this.buttonUnHide = new Button_();
-            this.panel_Dock = new Panel_();
-            this.buttonRight = new Button_();
-            this.buttonTopBottom = new Button_();
-            this.buttonLeft = new Button_();
-            this.panel_Size = new Panel_();
-            this.buttonLarge = new Button_();
-            this.buttonMedium = new Button_();
-            this.buttonSmall = new Button_();
-            this.panel_1 = new Panel_();
-            this.buttonClear = new Button_();
-            this.buttonPaste = new Button_();
-            this.buttonHide = new Button_();
+            this.imageSetup1 = new Lamedal_UIWinForms.UControl.images.ImageSetup(this.components);
             this.groupMain.SuspendLayout();
             this.groupDetail.SuspendLayout();
             this.groupHeader.SuspendLayout();
@@ -70,7 +71,7 @@ namespace Lamedal_UIWinForms.Test
             this.groupMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupMain.Location = new System.Drawing.Point(0, 0);
             this.groupMain.Name = "groupMain";
-            this.groupMain.Size = new System.Drawing.Size(334, 323);
+            this.groupMain.Size = new System.Drawing.Size(344, 323);
             this.groupMain.TabIndex = 0;
             this.groupMain.TabStop = false;
             // 
@@ -78,38 +79,31 @@ namespace Lamedal_UIWinForms.Test
             // 
             this.groupDetail.Controls.Add(this.buttonPaste2);
             this.groupDetail.Controls.Add(this.buttonUnHide);
+            this.groupDetail.Controls.Add(this.elementHost1);
             this.groupDetail.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupDetail.Location = new System.Drawing.Point(3, 62);
             this.groupDetail.Name = "groupDetail";
-            this.groupDetail.Size = new System.Drawing.Size(328, 258);
+            this.groupDetail.Size = new System.Drawing.Size(338, 258);
             this.groupDetail.TabIndex = 3;
             this.groupDetail.TabStop = false;
             this.groupDetail.Text = "Detail";
             // 
-            // groupHeader
+            // elementHost1
             // 
-            this.groupHeader.Controls.Add(this.panel_Dock);
-            this.groupHeader.Controls.Add(this.panel_Size);
-            this.groupHeader.Controls.Add(this.panel_1);
-            this.groupHeader.Controls.Add(this.buttonHide);
-            this.groupHeader.Dock = System.Windows.Forms.DockStyle.Top;
-            this.groupHeader.Location = new System.Drawing.Point(3, 16);
-            this.groupHeader.Name = "groupHeader";
-            this.groupHeader.Size = new System.Drawing.Size(328, 46);
-            this.groupHeader.TabIndex = 0;
-            this.groupHeader.TabStop = false;
-            this.groupHeader.Text = "Tag_Header";
-            // 
-            // imageSetup1
-            // 
-            this.imageSetup1.ImageSet = false;
+            this.elementHost1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.elementHost1.Location = new System.Drawing.Point(3, 16);
+            this.elementHost1.Name = "elementHost1";
+            this.elementHost1.Size = new System.Drawing.Size(332, 239);
+            this.elementHost1.TabIndex = 11;
+            this.elementHost1.Text = "elementHost1";
+            this.elementHost1.Child = null;
             // 
             // buttonPaste2
             // 
             this.buttonPaste2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonPaste2.Image = ((System.Drawing.Image)(resources.GetObject("buttonPaste2.Image")));
             this.buttonPaste2.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.buttonPaste2.Location = new System.Drawing.Point(285, 32);
+            this.buttonPaste2.Location = new System.Drawing.Point(295, 32);
             this.buttonPaste2.Name = "buttonPaste2";
             this.buttonPaste2.Parent_GroupBox = this.groupDetail;
             this.buttonPaste2.Parent_Panel = null;
@@ -126,7 +120,7 @@ namespace Lamedal_UIWinForms.Test
             this.buttonUnHide.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonUnHide.Image = ((System.Drawing.Image)(resources.GetObject("buttonUnHide.Image")));
             this.buttonUnHide.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.buttonUnHide.Location = new System.Drawing.Point(285, 11);
+            this.buttonUnHide.Location = new System.Drawing.Point(295, 11);
             this.buttonUnHide.Name = "buttonUnHide";
             this.buttonUnHide.Parent_GroupBox = this.groupDetail;
             this.buttonUnHide.Parent_Panel = null;
@@ -137,6 +131,20 @@ namespace Lamedal_UIWinForms.Test
             this.buttonUnHide.UseVisualStyleBackColor = true;
             this.buttonUnHide.Visible = false;
             this.buttonUnHide.Click += new System.EventHandler(this.buttonUnHide_Click);
+            // 
+            // groupHeader
+            // 
+            this.groupHeader.Controls.Add(this.panel_Dock);
+            this.groupHeader.Controls.Add(this.panel_Size);
+            this.groupHeader.Controls.Add(this.panel_1);
+            this.groupHeader.Controls.Add(this.buttonHide);
+            this.groupHeader.Dock = System.Windows.Forms.DockStyle.Top;
+            this.groupHeader.Location = new System.Drawing.Point(3, 16);
+            this.groupHeader.Name = "groupHeader";
+            this.groupHeader.Size = new System.Drawing.Size(338, 46);
+            this.groupHeader.TabIndex = 0;
+            this.groupHeader.TabStop = false;
+            this.groupHeader.Text = "Tag_Header";
             // 
             // panel_Dock
             // 
@@ -310,7 +318,7 @@ namespace Lamedal_UIWinForms.Test
             this.buttonHide.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonHide.Image = ((System.Drawing.Image)(resources.GetObject("buttonHide.Image")));
             this.buttonHide.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.buttonHide.Location = new System.Drawing.Point(301, 19);
+            this.buttonHide.Location = new System.Drawing.Point(311, 19);
             this.buttonHide.Name = "buttonHide";
             this.buttonHide.Parent_GroupBox = this.groupHeader;
             this.buttonHide.Parent_Panel = null;
@@ -321,11 +329,15 @@ namespace Lamedal_UIWinForms.Test
             this.buttonHide.UseVisualStyleBackColor = true;
             this.buttonHide.Click += new System.EventHandler(this.buttonHide_Click);
             // 
+            // imageSetup1
+            // 
+            this.imageSetup1.ImageSet = false;
+            // 
             // Form_cSharpCode
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(334, 323);
+            this.ClientSize = new System.Drawing.Size(344, 323);
             this.Controls.Add(this.groupMain);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form_cSharpCode";
@@ -364,6 +376,6 @@ namespace Lamedal_UIWinForms.Test
         private Panel_ panel_1;
         private ToolTip toolTip1;
         private ImageSetup imageSetup1;
-
+        internal System.Windows.Forms.Integration.ElementHost elementHost1;
     }
 }

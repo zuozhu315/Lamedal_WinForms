@@ -1,6 +1,6 @@
 ﻿namespace Lamedal_UIWinForms.Test
 {
-    public sealed class Form_cSharpCode_Proxy
+    public sealed class Form_cSharpCode_DTE
     {
         //private Form_cSharpCode _form;
 
