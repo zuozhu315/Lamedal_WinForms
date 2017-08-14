@@ -22,9 +22,9 @@ Lamedal_UIWinForms v0.0.1
 
  Lamedal_UIWinForms v0.0.1-alfa1: First release of Lamedal UI Winforms library.
 </PackageReleaseNotes>
-    <PackageIconUrl>https://sites.google.com/site/lamedalwiki/Project-News/lamedalporttonetcore10/Lamedal15.png</PackageIconUrl>
-    <PackageProjectUrl>https://sites.google.com/site/lamedalwiki/</PackageProjectUrl>
-    <PackageLicenseUrl>https://sites.google.com/site/lamedalwiki/copyright</PackageLicenseUrl>
+    <PackageIconUrl>https://sites.google.com/site/lamedalwiki/_/rsrc/1468739635082/config/customLogo.gif</PackageIconUrl>
+    <PackageProjectUrl>https://github.com/perezLamed/Lamedal_WinForms/</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/perezLamed/Lamedal_WinForms/</PackageLicenseUrl>
     <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
     <GenerateAssemblyDescriptionAttribute>false</GenerateAssemblyDescriptionAttribute>
     <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
@@ -34,7 +34,7 @@ Lamedal_UIWinForms v0.0.1
     <GenerateNeutralResourcesLanguageAttribute>false</GenerateNeutralResourcesLanguageAttribute>
     <GenerateAssemblyVersionAttribute>false</GenerateAssemblyVersionAttribute>
     <GenerateAssemblyFileVersionAttribute>false</GenerateAssemblyFileVersionAttribute>
-    <Version>0.0.1</Version>
+    <Version>0.0.2-Alfa1</Version>
     <RepositoryType>c#</RepositoryType>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageTags>WinForms Controls</PackageTags>
