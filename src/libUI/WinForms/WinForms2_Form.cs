@@ -4,6 +4,7 @@ using System.Reflection;
 using System.Windows.Forms;
 using LamedalCore;
 using LamedalCore.zz;
+using LamedalCore_Templates;
 using Lamedal_UIWinForms.libUI.Win32;
 using Lamedal_UIWinForms.UControl.Forms;
 using Lamedal_UIWinForms.zzz;

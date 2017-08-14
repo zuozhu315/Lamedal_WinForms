@@ -2,6 +2,7 @@
 using System.Drawing;
 using System.Windows.Forms;
 using LamedalCore.zz;
+using LamedalCore_Templates;
 using Lamedal_UIWinForms.domain.Enumerals;
 using Lamedal_UIWinForms.zzz;
 

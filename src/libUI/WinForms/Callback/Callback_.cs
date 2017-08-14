@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Windows.Forms;
 using LamedalCore.zz;
+using LamedalCore_Templates;
 using Lamedal_UIWinForms.State;
 using Lamedal_UIWinForms.zzz;
 

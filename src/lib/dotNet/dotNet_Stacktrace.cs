@@ -2,6 +2,7 @@
 using System.Reflection;
 using LamedalCore;
 using LamedalCore.zz;
+using LamedalCore_Templates;
 
 namespace Lamedal_UIWinForms.lib.dotNet
 {

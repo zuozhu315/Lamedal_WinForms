@@ -8,6 +8,7 @@ using System.Windows.Forms;
 using LamedalCore;
 using LamedalCore.domain.Attributes;
 using LamedalCore.zz;
+using LamedalCore_Templates;
 using Lamedal_UIWinForms.lib.dotNet;
 using Lamedal_UIWinForms.libUI.WinForms.UIDesigner;
 using Lamedal_UIWinForms.zzz;

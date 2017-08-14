@@ -6,6 +6,7 @@ using System.Threading;
 using System.Windows.Forms;
 using LamedalCore.domain.Attributes;
 using LamedalCore.domain.Enumerals;
+using Lamedal_UIWinForms.zzz;
 
 namespace Lamedal_UIWinForms.libUI.WinForms
 {
@@ -101,25 +102,15 @@ namespace Lamedal_UIWinForms.libUI.WinForms
         /// </summary>
         /// <param name="copyStr">The copy string.</param>
         /// <param name="usedInternally">Used internally.</param>
-        public void Clipboard_CopyStrTo(string copyStr, int usedInternally = 1)
+        public void Clipboard_CopyStrTo(string copyStr)
         {
             if (copyStr == "") return;
 
-            Clipboard.SetText(copyStr);
-            DoEvents();
-            var val = Clipboard_GetStrFrom();
-            if (copyStr != val)
-            {
-                if (usedInternally <= 1)
-                {
-                    //Let us try again after we give windows some time to process
-                    Application.DoEvents();
-                    Thread.Sleep(10);
-                    Application.DoEvents();
-                    Clipboard_CopyStrTo(copyStr, ++usedInternally);
-                }
-                _lamedWin.libUI.WinForms.Dialog_Simple.MessageBox_Ok("Error: Clipboard copy was not successful!");
-            }
+            var thread = new Thread(param => { Clipboard.SetText(copyStr); });
+            thread.SetApartmentState(ApartmentState.STA);
+            thread.Start();
+            10.zDoEvents(100);  // Lest give this a sec to complete
+            thread.Abort();
         }
 
         /// <summary>
@@ -128,10 +119,14 @@ namespace Lamedal_UIWinForms.libUI.WinForms
         /// <returns></returns>
         public string Clipboard_GetStrFrom()
         {
-            return Clipboard.GetText();
+            string result = "";
+            var thread2 = new Thread(() => result = Clipboard.GetText());
+            thread2.SetApartmentState(ApartmentState.STA);
+            thread2.Start();
+            10.zDoEvents(100); // Lets give this a sec to complete
+            thread2.Abort();
+            return result;
         }
-
-
 
         /// <summary>
         /// Determines if Designer is active for the control.

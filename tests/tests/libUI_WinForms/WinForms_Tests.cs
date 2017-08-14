@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Threading;
+using System.Windows.Forms;
+using Lamedal_UIWinForms.zzz;
 using Xunit;
 
 namespace Lamedal_UIWinForms.Test.tests.libUI_WinForms
@@ -11,10 +14,15 @@ namespace Lamedal_UIWinForms.Test.tests.libUI_WinForms
         [STAThread]
         public void Clipboard_CopyStrTo_Test()
         {
-            var test = "This is a test string";
-            _lamedWin.libUI.WinForms.Tools.Clipboard_CopyStrTo(test);
-            var test2 = _lamedWin.libUI.WinForms.Tools.Clipboard_GetStrFrom();
-            Assert.Equal(test, test2);
+            var test1 = "This is a test string";
+            var test2 = "Another string";
+            _lamedWin.libUI.WinForms.Tools.Clipboard_CopyStrTo(test1);
+            string testReturn1 = _lamedWin.libUI.WinForms.Tools.Clipboard_GetStrFrom();
+            Assert.Equal(test1, testReturn1);
+
+            _lamedWin.libUI.WinForms.Tools.Clipboard_CopyStrTo(test2);
+            string testReturn2 = _lamedWin.libUI.WinForms.Tools.Clipboard_GetStrFrom();
+            Assert.Equal(test2, testReturn2);
         }
     }
 }

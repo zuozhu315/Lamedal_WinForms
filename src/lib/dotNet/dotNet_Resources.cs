@@ -9,6 +9,7 @@ using LamedalCore;
 using LamedalCore.domain.Attributes;
 using LamedalCore.domain.Enumerals;
 using LamedalCore.zz;
+using LamedalCore_Templates;
 
 namespace Lamedal_UIWinForms.lib.dotNet
 {

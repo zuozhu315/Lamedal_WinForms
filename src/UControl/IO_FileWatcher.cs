@@ -5,6 +5,7 @@ using System.Linq;
 using System.Windows.Forms;
 using LamedalCore;
 using LamedalCore.zz;
+using LamedalCore_Templates;
 using Lamedal_UIWinForms.zzz;
 
 namespace Lamedal_UIWinForms.UControl

@@ -3,6 +3,7 @@ using System.ComponentModel.Design;
 using System.Windows.Forms;
 using System.Windows.Forms.Design;
 using LamedalCore.zz;
+using LamedalCore_Templates;
 using Lamedal_UIWinForms.libUI.Interfaces;
 using Lamedal_UIWinForms.UControl._Designer;
 using Lamedal_UIWinForms.zzz;

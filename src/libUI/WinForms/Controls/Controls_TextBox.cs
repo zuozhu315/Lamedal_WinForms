@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Windows.Forms;
 using LamedalCore;
 using LamedalCore.zz;
+using LamedalCore_Templates;
 
 namespace Lamedal_UIWinForms.libUI.WinForms.Controls
 {
