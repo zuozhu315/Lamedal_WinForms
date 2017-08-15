@@ -25,6 +25,6 @@ LamedalCore           |Windows 10.0 VS2017| ![alt tag](https://www.codefactor.io
 Lamedal_WinForms      |Windows 10.0 VS2017| ![alt tag](https://www.codefactor.io/repository/github/perezlamed/Lamedal_WinForms/badge)              |![alt tag](https://ci.appveyor.com/api/projects/status/haxbe8sdqurfx15c?svg=true) |                |             
 
 ## Build History
-![Build History](https://buildstats.info/appveyor/chart/perezLamed/lamedal_winforms_debug)
+![Build History](https://buildstats.info/appveyor/chart/perezLamed/lamedal-winforms-debug)
 
 MIT license
