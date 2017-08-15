@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26228.9
+VisualStudioVersion = 15.0.26510.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LamedalCore", "..\LamedalCore\src\LamedalCore.csproj", "{421FEB9F-B016-45BD-98BE-9B4889F39057}"
 EndProject
@@ -24,8 +24,6 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LamedalCore_Templates", "..\LamedalCore_Templates\src\LamedalCore_Templates.csproj", "{B2310E9D-9F48-4353-81C7-BD6266C3FDBC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LamedalCore_Templates.Test", "..\LamedalCore_Templates\tests\LamedalCore_Templates.Test.csproj", "{D1B9A0A7-F423-451E-9DBE-1772D36DC3B9}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaMedalVisualStudio.ActiveTemplates", "E:\Dev\LaMedal\trunk\LaMedal\LaMedalVisualStudio.ActiveTemplates\LaMedalVisualStudio.ActiveTemplates.csproj", "{3FE48992-939B-4C0E-AEB2-B899BF7C4320}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -107,14 +105,6 @@ Global
 		{D1B9A0A7-F423-451E-9DBE-1772D36DC3B9}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D1B9A0A7-F423-451E-9DBE-1772D36DC3B9}.Release|x86.ActiveCfg = Release|Any CPU
 		{D1B9A0A7-F423-451E-9DBE-1772D36DC3B9}.Release|x86.Build.0 = Release|Any CPU
-		{3FE48992-939B-4C0E-AEB2-B899BF7C4320}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3FE48992-939B-4C0E-AEB2-B899BF7C4320}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3FE48992-939B-4C0E-AEB2-B899BF7C4320}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{3FE48992-939B-4C0E-AEB2-B899BF7C4320}.Debug|x86.Build.0 = Debug|Any CPU
-		{3FE48992-939B-4C0E-AEB2-B899BF7C4320}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3FE48992-939B-4C0E-AEB2-B899BF7C4320}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3FE48992-939B-4C0E-AEB2-B899BF7C4320}.Release|x86.ActiveCfg = Release|Any CPU
-		{3FE48992-939B-4C0E-AEB2-B899BF7C4320}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
