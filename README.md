@@ -13,6 +13,9 @@ Library of WinForms controls
 * Project : https://sites.google.com/site/lamedalwiki/
 * Lamedal Nuget package: https://www.nuget.org/packages/Lamedal_UIWinForms/ [![NuGet Badge](https://buildstats.info/nuget/Lamedal_UIWinForms)](https://www.nuget.org/packages/Lamedal_UIWinForms/) 
 * `PM> Install-Package Lamedal_UIWinForms`
+* Related Projects:
+  - https://github.com/perezLamed/LamedalCore/
+  - https://github.com/perezLamed/LamedalCore_Templates/
 
 
 ## State
