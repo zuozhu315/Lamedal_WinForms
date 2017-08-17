@@ -23,13 +23,14 @@ namespace Lamedal_UIWinForms.Test.tests
             form.Close();
         }
 
-        [Fact]
-        [STAThread]
-        public void A_TestIfThreadIsSTA()
-        {
-            // Is threading to STA
-            Assert.True(_lamedWin.libUI.WinForms.Tools.ThreadIsSTA(false));
-        }
+        //// This test is no longer required because STA threads are created where needed.
+        //[Fact]
+        //[STAThread]
+        //public void A_TestIfThreadIsSTA()
+        //{
+        //    // Is threading to STA
+        //    Assert.True(_lamedWin.libUI.WinForms.Tools.ThreadIsSTA(false));
+        //}
 #endif
 
     }

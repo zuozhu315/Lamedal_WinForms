@@ -6,8 +6,7 @@ namespace Lamedal_UIWinForms.Assets
 {
     public sealed class Assets_
     {
-        private const string _Namespace = "Lamedal_UIWinForms.Assets.assets.";
-
+        private const string _Namespace = "Lamedal_UIWinForms.Assets.";
 
         #region Image
         /// <summary>
@@ -19,7 +18,6 @@ namespace Lamedal_UIWinForms.Assets
         }
         private Assets_Image _Image;
         #endregion
-
 
         #region ImageList
         /// <summary>

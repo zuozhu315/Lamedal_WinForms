@@ -80,8 +80,6 @@ namespace Lamedal_UIWinForms.Assets
             return result;
         }
 
-        
-
         /// <summary>
         /// Creates the image from resource file from the key.
         /// </summary>
@@ -95,7 +93,9 @@ namespace Lamedal_UIWinForms.Assets
             foreach (string file in resourceFiles)
             {
                 if (file == "All") continue;
-                image = Image_FromResourceFile(_lamedWin.Assets.Namespace + file, key, false);
+                var namespace1 = _lamedWin.Assets.Namespace; // .Replace(".assets","")
+                var resourcePath = namespace1 + file;
+                image = Image_FromResourceFile(resourcePath, key, false);
                 if (image != null)
                 {
                     resourceFile = file;
