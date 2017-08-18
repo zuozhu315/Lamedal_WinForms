@@ -13,7 +13,7 @@ namespace Lamedal_UIWinForms.UControl._Designer
     [Designer(typeof (UControl_Interface_Designer))] // Link the designer   
     [Docking(DockingBehavior.Ask)] // Dock in parent control
     [ToolboxItem(true)]
-    [ToolboxBitmap(typeof(CheckBox))]
+    [ToolboxBitmap("Assets.Tools.checkbox_16xLG.png")]
     public sealed class CheckBox_ : CheckBox, IUControl, IUControl_Docking
     {
         private readonly Lamedal_WinForms IamWindows = Lamedal_WinForms.Instance; // Set reference to Blueprint Windows lib

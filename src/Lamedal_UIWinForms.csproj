@@ -151,6 +151,11 @@ Lamedal_UIWinForms v0.0.1
       <AutoGen>True</AutoGen>
       <DependentUpon>ToolOther.resx</DependentUpon>
     </Compile>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Update="UControl\button\Button_.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -384,11 +389,18 @@ Lamedal_UIWinForms v0.0.1
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>ToolOther.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Update="UControl\images\ImageSetup_Form.resx">
       <DependentUpon>ImageSetup_Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Update="UControl\images\ImageSetup_FormHelp.resx">
       <DependentUpon>ImageSetup_FormHelp.cs</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets\Tools\" />
   </ItemGroup>
 </Project>
