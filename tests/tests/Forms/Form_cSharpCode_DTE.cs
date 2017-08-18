@@ -1,4 +1,4 @@
-﻿namespace Lamedal_UIWinForms.Test
+﻿namespace Lamedal_UIWinForms.Test.tests.Forms
 {
     public sealed class Form_cSharpCode_DTE
     {

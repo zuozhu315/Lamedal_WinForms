@@ -1,9 +1,9 @@
 ﻿using System.Windows.Forms;
 using Lamedal_UIWinForms.UControl.button;
-using Lamedal_UIWinForms.UControl.panel;
 using Lamedal_UIWinForms.UControl.images;
+using Lamedal_UIWinForms.UControl.panel;
 
-namespace Lamedal_UIWinForms.Test
+namespace Lamedal_UIWinForms.Test.tests.Forms
 {
     partial class Form_cSharpCode
     {

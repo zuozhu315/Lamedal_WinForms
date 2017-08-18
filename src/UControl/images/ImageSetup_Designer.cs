@@ -51,6 +51,7 @@ namespace Lamedal_UIWinForms.UControl.images
             //Define static section header entries.
             items.Add(new DesignerActionHeaderItem("Image Setup"));
             items.Add(new DesignerActionPropertyItem("ImageSet", "Image Set:", "Image Setup"));
+            items.Add(new DesignerActionPropertyItem("ImageHelp", "Help:", "Help"));
             return items;
         }
 
@@ -61,6 +62,23 @@ namespace Lamedal_UIWinForms.UControl.images
             {
                 UIDesigner_Tools.Change_Begin(this);
                 _Control.ImageSet = value;
+                if (value)
+                {
+                    //_frmImageResouce = new ImageSetup_Form();
+                    //_frmImageResouce.Setup(this);
+                    //_Control.ImageSet = false;
+                }
+                UIDesigner_Tools.Change_End(this);
+            }
+        }
+
+        public bool ImageHelp
+        {
+            get { return _Control.ImageHelp; }
+            set
+            {
+                UIDesigner_Tools.Change_Begin(this);
+                _Control.ImageHelp = value;
                 if (value)
                 {
                     //_frmImageResouce = new ImageSetup_Form();

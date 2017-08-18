@@ -11,15 +11,15 @@ namespace Lamedal_UIWinForms.UControl.images
     //DefaultEvent("Event_OnValueChange")]
     [DefaultProperty("Image_Source")]
     [ToolboxItem(true)]
-    [Designer(typeof(ImageList_Designer))]   // Link the designer
-    public partial class ImageList_ : Component
+    [Designer(typeof(ImageList_Setup_Designer))]   // Link the designer
+    public partial class ImageList_Setup : Component
     {
-        public ImageList_()
+        public ImageList_Setup()
         {
             InitializeComponent();
         }
 
-        public ImageList_(IContainer container)
+        public ImageList_Setup(IContainer container)
         {
             container.Add(this);
 

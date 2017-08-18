@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Lamedal_UIWinForms.UControl.images;
 
 namespace Lamedal_UIWinForms.Test
 {
@@ -18,7 +19,8 @@ namespace Lamedal_UIWinForms.Test
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new Form1());
             //Application.Run(new Form2());
-            Application.Run(new Form_cSharpCode());
+            //Application.Run(new Form_cSharpCode());
+            Application.Run(new ImageSetup_Form());
             
         }
 

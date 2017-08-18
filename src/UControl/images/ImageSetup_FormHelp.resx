@@ -117,16 +117,19 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="imageList1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>243, 17</value>
-  </metadata>
-  <metadata name="statusStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>127, 17</value>
-  </metadata>
-  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>50</value>
-  </metadata>
+  <data name="textBox1.Text" xml:space="preserve">
+    <value>Image Setup Help
+-------------------
+Image setup provides sets of optimised images that can be used to enhance the user interface of a application. Images are coppied to the selected control (meaning that this control can be removed once images are setup for a form)
+
+Select Image Set:     Use the Combobox to select a image set.
+Search Image:          Type in the text to search for and press ENTER.
+Select Image:           Click on the image.
+Set Image 
+dimentions:             Click on the Combobox in the properties section to select.
+Select Control:        Click on the image in the Form to select it.
+Set Control Image: Select image and select control and press on the 'Set' button.
+
+(This controls main purpose is to help developers to quickly beautify their applications)</value>
+  </data>
 </root>

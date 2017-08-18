@@ -1,7 +1,7 @@
 ﻿using System.Windows.Forms;
 using ICSharpCode.AvalonEdit;
 
-namespace Lamedal_UIWinForms.Test
+namespace Lamedal_UIWinForms.Test.tests.Forms
 {
     /// <summary>
     /// 

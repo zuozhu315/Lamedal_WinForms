@@ -1,10 +1,10 @@
 ﻿using System.Windows.Forms;
 using ICSharpCode.AvalonEdit;
 using LamedalCore.zz;
-using Lamedal_UIWinForms.zzz;
 using LamedalCore_Templates;
+using Lamedal_UIWinForms.zzz;
 
-namespace Lamedal_UIWinForms.Test
+namespace Lamedal_UIWinForms.Test.tests.Forms
 {
     public static class Form_cSharpCode_Methods
     {

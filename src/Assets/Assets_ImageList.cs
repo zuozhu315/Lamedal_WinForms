@@ -29,7 +29,7 @@ namespace Lamedal_UIWinForms.Assets
 
             if (resourceFile != enBlueprintUIAssets.All)
             {
-                if (resourceFile == enBlueprintUIAssets.IconFileExtentions) FileIcons(imageList);
+                if (resourceFile == enBlueprintUIAssets.IconFileExtentions) FileIcons(imageList, findValue);
                 else ImageList_FromResourceFile(assembly, imageList, _lamedWin.Assets.Namespace + resourceFile);
                 return;  // <======================================================================
             }
@@ -41,7 +41,7 @@ namespace Lamedal_UIWinForms.Assets
                 if (file == "All") continue;
                 if (file == "IconFileExtentions")
                 {
-                    FileIcons(imageList);
+                    FileIcons(imageList, findValue);
                     continue;
                 }
                 ImageList_FromResourceFile(assembly, imageList, _lamedWin.Assets.Namespace + file, findValue);
@@ -63,12 +63,13 @@ namespace Lamedal_UIWinForms.Assets
             #endregion
         }
 
-        public void FileIcons(ImageList imageList)
+        public void FileIcons(ImageList imageList, string findValue)
         {
             var iconList = new List<string>();
             foreach (string enumValue in Enum.GetNames(typeof(enIconFileTypes)))
             {
                 string ext = "." +enumValue.Replace("_", "");
+                if (findValue != "" && ext.Contains(findValue) == false) continue;  //<-------------[Filter
                 Icon icon = AssetIconTools.File_IconForExtension(ext, enIconShell32Sizes.Icon32);
                 imageList.Images.Add(ext, icon.ToBitmap());
             }

@@ -7,7 +7,7 @@ namespace Lamedal_UIWinForms.UControl.images
 {
     [System.Security.Permissions.PermissionSet
     (System.Security.Permissions.SecurityAction.Demand, Name = "FullTrust")]
-    public class ImageList_Designer : ComponentDesigner
+    public class ImageList_Setup_Designer : ComponentDesigner
     {
         private DesignerActionListCollection actionLists;
         public override DesignerActionListCollection ActionLists
@@ -32,7 +32,7 @@ namespace Lamedal_UIWinForms.UControl.images
     {
         #region Init
 
-        private readonly ImageList_ _imageList;
+        private readonly ImageList_Setup _imageListSetup;
         private readonly DesignerActionUIService _designerActionUISvc;
 
         /// <summary>
@@ -42,7 +42,7 @@ namespace Lamedal_UIWinForms.UControl.images
         public ImageList_Setup_ActionList(IComponent component): base(component)
         {
             // Cache a reference to DesignerActionUIService, so the DesigneractionList can be refreshed.
-            this._imageList = component as ImageList_;
+            this._imageListSetup = component as ImageList_Setup;
             this._designerActionUISvc = GetService(typeof(DesignerActionUIService)) as DesignerActionUIService;
         }
         #endregion
@@ -84,53 +84,53 @@ namespace Lamedal_UIWinForms.UControl.images
         }
         public enBlueprintUIAssets Image_Source
         {
-            get { return _imageList.Image_Source; }
+            get { return _imageListSetup.Image_Source; }
             set
             {
                 FireChanging();
-                _imageList.Image_Source = value;
+                _imageListSetup.Image_Source = value;
                 _designerActionUISvc.Refresh(this.Component);
                 FireChanged();
             }
         }
         public ImageList Image_List1
         {
-            get { return _imageList.Image_List1; }
+            get { return _imageListSetup.Image_List1; }
             set
             {
                 FireChanging();
-                _imageList.Image_List1 = value;
+                _imageListSetup.Image_List1 = value;
                 FireChanged();
             }
         }
         public ImageList Image_List2
         {
-            get { return _imageList.Image_List2; }
+            get { return _imageListSetup.Image_List2; }
             set
             {
                 FireChanging();
-                _imageList.Image_List2 = value;
+                _imageListSetup.Image_List2 = value;
                 FireChanged();
             }
         }
         public bool Image_Refresh
         {
-            get { return _imageList.Image_Refresh; }
+            get { return _imageListSetup.Image_Refresh; }
             set
             {
                 FireChanging();
-                _imageList.Image_Refresh = value;
+                _imageListSetup.Image_Refresh = value;
                 FireChanged();
             }
         }
 
         public bool Image_Status
         {
-            get { return _imageList.Image_Status; }
+            get { return _imageListSetup.Image_Status; }
             set
             {
                 FireChanging();
-                _imageList.Image_Status = value;
+                _imageListSetup.Image_Status = value;
                 FireChanged();
             }
         }

@@ -12,6 +12,11 @@
     <AssemblyName>Lamedal_UIWinForms</AssemblyName>
     <PackageId>Lamedal_UIWinForms</PackageId>
     <PackageReleaseNotes>
+Lamedal_UIWinForms v0.0.2 
+=========================
+Alfa2 -  
+Alfa1 - Fixed ImageSetup and added tooltips. 
+    
 Lamedal_UIWinForms v0.0.1 
 =========================
  - Fixes major bugs on windows controls. 
@@ -34,7 +39,7 @@ Lamedal_UIWinForms v0.0.1
     <GenerateNeutralResourcesLanguageAttribute>false</GenerateNeutralResourcesLanguageAttribute>
     <GenerateAssemblyVersionAttribute>false</GenerateAssemblyVersionAttribute>
     <GenerateAssemblyFileVersionAttribute>false</GenerateAssemblyFileVersionAttribute>
-    <Version>0.0.2-Alfa1</Version>
+    <Version>0.0.2-Alfa2</Version>
     <RepositoryType>c#</RepositoryType>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageTags>WinForms Controls</PackageTags>
@@ -67,10 +72,6 @@ Lamedal_UIWinForms v0.0.1
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Design" />
     <Reference Include="System.Drawing" />
-    <Reference Include="System.Runtime">
-      <HintPath>..\packages\System.Runtime.4.3.0\lib\net462\System.Runtime.dll</HintPath>
-      <Private>true</Private>
-    </Reference>
     <Reference Include="System.Xaml" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq" />
@@ -240,11 +241,11 @@ Lamedal_UIWinForms v0.0.1
     <Compile Update="UControl\Forms\Dialog\Progress_WaitCursor_Form.Designer.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="UControl\images\ImageList_.cs">
+    <Compile Update="UControl\images\ImageList_Setup.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Update="UControl\images\ImageList_.Designer.cs">
-      <DependentUpon>ImageList_.cs</DependentUpon>
+    <Compile Update="UControl\images\ImageList_Setup.Designer.cs">
+      <DependentUpon>ImageList_Setup.cs</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Update="UControl\images\ImageSetup.cs">
@@ -259,6 +260,13 @@ Lamedal_UIWinForms v0.0.1
     </Compile>
     <Compile Update="UControl\images\ImageSetup_Form.Designer.cs">
       <DependentUpon>ImageSetup_Form.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UControl\images\ImageSetup_FormHelp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UControl\images\ImageSetup_FormHelp.Designer.cs">
+      <DependentUpon>ImageSetup_FormHelp.cs</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="UControl\Input\Input_Control.cs">
@@ -378,6 +386,9 @@ Lamedal_UIWinForms v0.0.1
     </EmbeddedResource>
     <EmbeddedResource Update="UControl\images\ImageSetup_Form.resx">
       <DependentUpon>ImageSetup_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UControl\images\ImageSetup_FormHelp.resx">
+      <DependentUpon>ImageSetup_FormHelp.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
 </Project>

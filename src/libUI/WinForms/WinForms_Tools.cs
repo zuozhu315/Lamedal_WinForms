@@ -101,8 +101,8 @@ namespace Lamedal_UIWinForms.libUI.WinForms
         /// Copy string to the Clipboard.
         /// </summary>
         /// <param name="copyStr">The copy string.</param>
-        /// <param name="usedInternally">Used internally.</param>
-        public void Clipboard_CopyStrTo(string copyStr)
+        /// <param name="showConfirmMsg">if set to <c>true</c> [show confirm MSG].</param>
+        public void Clipboard_CopyStrTo(string copyStr, bool showConfirmMsg= false)
         {
             if (copyStr == "") return;
 
@@ -111,6 +111,7 @@ namespace Lamedal_UIWinForms.libUI.WinForms
             thread.Start();
             10.zDoEvents(100);  // Lest give this a sec to complete
             thread.Abort();
+            if (showConfirmMsg) $"'{copyStr}' was coppied to the clipboard.".zOk();
         }
 
         /// <summary>

@@ -22,6 +22,8 @@ namespace Lamedal_UIWinForms.UControl.images
             InitializeComponent();
         }
 
+        #region ImageSet
+        [Description("Show images that can be used to beautify your form")]
         public bool ImageSet
         {
             get { return _ImageSet; }
@@ -39,5 +41,27 @@ namespace Lamedal_UIWinForms.UControl.images
         }
         private bool _ImageSet;
         private ImageSetup_Form _frmImageResouce;
+        #endregion
+
+        #region ImageHelp
+        [Description("Show help form")]
+        public bool ImageHelp
+        {
+            get { return _ImageHelp; }
+            set
+            {
+                _ImageHelp = value;
+                if (value)
+                {
+                    // Do the Action
+                    _frmImageHelp = new ImageSetup_FormHelp();
+                    _frmImageHelp.ShowDialog();
+                    _ImageHelp = false;
+                }
+            }
+        }
+        private bool _ImageHelp;
+        private ImageSetup_FormHelp _frmImageHelp;
+        #endregion
     }
 }

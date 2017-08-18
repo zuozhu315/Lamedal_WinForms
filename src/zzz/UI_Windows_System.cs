@@ -8,14 +8,15 @@ namespace Lamedal_UIWinForms.zzz
     /// <code>CTI_MLink;</code>
     public static class UI_Windows_System
     {
-        
+
         /// <summary>
         /// Copy string to the Clipboard.
         /// </summary>
         /// <param name="copyStr">The copy string.</param>
-        public static void zClipboard_CopyStrTo(this string copyStr)
+        /// <param name="showConfirmMsg">if set to <c>true</c> [show confirm MSG].</param>
+        public static void zClipboard_CopyStrTo(this string copyStr, bool showConfirmMsg = false)
         {
-            Lamedal_WinForms.Instance.libUI.WinForms.Tools.Clipboard_CopyStrTo(copyStr);
+            Lamedal_WinForms.Instance.libUI.WinForms.Tools.Clipboard_CopyStrTo(copyStr, showConfirmMsg);
         }
 
         /// <summary>

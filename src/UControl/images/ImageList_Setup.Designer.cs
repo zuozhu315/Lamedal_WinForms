@@ -1,6 +1,6 @@
 ﻿namespace Lamedal_UIWinForms.UControl.images
 {
-    partial class ImageList_
+    partial class ImageList_Setup
     {
         /// <summary>
         /// Required designer variable.

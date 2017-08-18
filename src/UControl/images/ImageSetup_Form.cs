@@ -56,9 +56,10 @@ namespace Lamedal_UIWinForms.UControl.images
             _resourceText = comboBox_Resources.Text;
             var resourceFile = _resourceText.zEnum_To_EnumValue<enBlueprintUIAssets>();   // Get the BlueprintUIAssets enumeral
             imageList1.zFromResourceFile(resourceFile, findValue: findValue);  // Load the resources into imagelist
-
+            if (imageList1.Images.Count == 0) toolStripStatusLabel1.Text = "No imagers were found.";
             // Show all images in the listview control
             AssetTools.zListView_FromImageList(listView1, imageList1, View_Get());
+            toolStripStatusLabel1.Text = $"Image set '{_resourceText}' loaded.";
         }
 
         private View View_Get()
@@ -79,7 +80,9 @@ namespace Lamedal_UIWinForms.UControl.images
             string resourcePath;
             _image = _lamedWin.Assets.Image.Image_FromResourceFile(resourceFile, resourceName, out resourcePath);
             Image image2 = Image_Scale(_image, comboBox_Resize);
-            textBox_Path2Image.Text = resourcePath+";";
+            // Resource path
+            
+            textBox_Path2Image.Text = (checkBox_Variable.Checked) ? $"Bitmap pic = {resourcePath};" : $"{resourcePath};";
 
             button_Image.Image = image2;
             input_Width.Text = _image.Width.ToString();
@@ -88,6 +91,7 @@ namespace Lamedal_UIWinForms.UControl.images
             //if (_image.Width <= 32 && _image.Height <= 32) checkBox_Iconable.Checked = true;
             Icon icon = Bmp_ToIcon(new Bitmap(_image));
             this.Icon = icon;
+            toolStripStatusLabel1.Text = $"Image '{resourceName}' loaded @ ({_image.Width}x{_image.Height}). Select a control and click 'Set' button.";
         }
 
         private void comboBox_Resize_SelectedIndexChanged(object sender, EventArgs e)
@@ -114,17 +118,29 @@ namespace Lamedal_UIWinForms.UControl.images
 
         private void button_Set_Click(object sender, EventArgs e)
         {
-            if (_image == null) return;
+            if (_image == null)
+            {
+                toolStripStatusLabel1.Text = "Cannot set image! No selected image.";
+                return;
+            }
 
             Image image2 = Image_Scale(_image, comboBox_Resize);
             Icon icon = Bmp_ToIcon(new Bitmap(image2));
             this.Icon = icon;
 
-            if (_components == null) return;  // This form was run in normal mode (and not from a component)
+            if (_components == null)
+            {
+                toolStripStatusLabel1.Text = "Cannot set image! No selected control.";
+                return;  // This form was run in normal mode (and not from a component)
+            }
 
             //Component component1 = Control_Selected();
             Component component1 = UIDesigner_Component.ControlNames(_components, listBox_Components.Text);
-            if (component1 == null) return;
+            if (component1 == null)
+            {
+                toolStripStatusLabel1.Text = "Cannot set image! No selected control.";
+                return;
+            }
 
             // ========================================================
             var form1 = component1 as Form;
@@ -161,7 +177,7 @@ namespace Lamedal_UIWinForms.UControl.images
             {
                 // Other controls
                 var control1 = component1 as Control;
-                if (control1 != null)
+                if (control1 != null) 
                 {
                     control1.BackgroundImage = image2;
                     control1.BackgroundImageLayout = ImageLayout.None;
@@ -231,6 +247,7 @@ namespace Lamedal_UIWinForms.UControl.images
                 {
                     UIDesigner_Tools.Host_Controls_SelectedSet1(_host, control1);
                     //control1.ToString().zOk();
+                    toolStripStatusLabel1.Text = $"Click on 'Set' to copy image to '{control1.ToString()}'.";
                 }
             }
             finally
@@ -285,5 +302,27 @@ namespace Lamedal_UIWinForms.UControl.images
             return Icon.FromHandle(handle);
         }
 
+        private void button_Apps_Click(object sender, EventArgs e)
+        {
+            if (textBox_Search.Text == "") "Please type in a term to search for.".zOk();
+            textBox_Search.zENTER();
+        }
+
+        private void button_Help_Click(object sender, EventArgs e)
+        {
+            var frm = new ImageSetup_FormHelp();
+            frm.ShowDialog();
+            frm.Close();
+        }
+
+        private void button_Copy_Click(object sender, EventArgs e)
+        {
+            textBox_Path2Image.Text.zClipboard_CopyStrTo(true);            
+        }
+
+        private void checkBox_Variable_CheckedChanged(object sender, EventArgs e)
+        {
+            listView1_SelectedIndexChanged(null, null);
+        }
     }
 }
