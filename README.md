@@ -14,9 +14,10 @@ Library of WinForms controls
 * Lamedal Nuget package: https://www.nuget.org/packages/Lamedal_UIWinForms/ [![NuGet Badge](https://buildstats.info/nuget/Lamedal_UIWinForms)](https://www.nuget.org/packages/Lamedal_UIWinForms/) 
 * `PM> Install-Package Lamedal_UIWinForms`
 * Related Projects:
-  - https://github.com/perezLamed/LamedalCore/
-  - https://github.com/perezLamed/LamedalCore_Templates/
-
+  - https://github.com/perezLamed/LamedalCore_Templates (.NetCore & .Net461 - Simple Template code generation)
+  - https://github.com/perezLamed/LamedalCore  (.NetCore & .Net461 - Useful methods for a quick start [Types, IO, Console, c#])
+  - https://github.com/perezLamed/Lamedal_Samples (.NetCore & .Net462 - Sample projects)
+  
 
 ## State
 * Build on [AppVeyor](https://ci.appveyor.com/projects)
