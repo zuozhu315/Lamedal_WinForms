@@ -6,8 +6,6 @@ using Lamedal_UIWinForms.domain.Enumerals;
 
 namespace Lamedal_UIWinForms.UControl.button
 {
-    
-
     public class Button_Standard_Class
     {
         private Panel pnlBorder;

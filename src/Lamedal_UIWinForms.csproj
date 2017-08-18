@@ -14,7 +14,7 @@
     <PackageReleaseNotes>
 Lamedal_UIWinForms v0.0.2 
 =========================
-Alfa2 -  
+Alfa2 - Remove 'sealed' from all user controls to allow extensibility.
 Alfa1 - Fixed ImageSetup and added tooltips. 
     
 Lamedal_UIWinForms v0.0.1 

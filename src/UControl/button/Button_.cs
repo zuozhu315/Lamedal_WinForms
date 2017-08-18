@@ -14,7 +14,7 @@ namespace Lamedal_UIWinForms.UControl.button
     [Designer(typeof(UControl_Interface_Designer))]   // Link the designer   
     [Docking(DockingBehavior.Ask)]  // Dock in parent control
     [ToolboxBitmap(typeof(Button))]
-    public sealed class Button_ : Button, IUControl, IUControl_Autosize, IUControl_Docking
+    public class Button_ : Button, IUControl, IUControl_Autosize, IUControl_Docking
     {
         private readonly Lamedal_WinForms _lamedWin = Lamedal_WinForms.Instance;
 

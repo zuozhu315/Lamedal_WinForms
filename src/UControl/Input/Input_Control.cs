@@ -18,7 +18,7 @@ namespace Lamedal_UIWinForms.UControl.Input
     [Designer(typeof(Input_Control_Designer))]   // Link the designer
     [Docking(DockingBehavior.Ask)]
     [ToolboxItem(true)]
-    public sealed partial class Input_Control : UserControl_, IUControl_Docking, IUControl_ObjectModel
+    public partial class Input_Control : UserControl_, IUControl_Docking, IUControl_ObjectModel
     {
         #region Init
         private readonly Lamedal_WinForms IamWindows = Lamedal_WinForms.Instance;

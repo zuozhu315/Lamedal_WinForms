@@ -9,7 +9,7 @@ namespace Lamedal_UIWinForms.UControl.panel
     /// </summary>
     [Designer(typeof(Panel_Designer))]   // Link the designer   
     [Docking(DockingBehavior.Ask)]
-    public sealed class Panel_Transparent : System.Windows.Forms.Panel
+    public class Panel_Transparent : Panel
     {
         private PictureBox _zPicture;
         private int _Left;

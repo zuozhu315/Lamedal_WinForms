@@ -13,7 +13,6 @@ namespace Lamedal_UIWinForms.UControl.Forms.Dialog
 
         private void Dialog_Inputbox_Load(object sender, System.EventArgs e)
         {
-
         }
 
         /// <summary>

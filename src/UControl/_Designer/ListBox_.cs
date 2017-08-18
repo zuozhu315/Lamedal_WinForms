@@ -13,7 +13,7 @@ namespace Lamedal_UIWinForms.UControl._Designer
     [Designer(typeof(UControl_Interface_Designer))] // Link the designer   
     [Docking(DockingBehavior.Ask)] // Dock in parent control
     [ToolboxBitmap(typeof(ListBox))]
-    public sealed class ListBox_ : ListBox, IUControl, IUControl_Docking, IUControl_ObjectModel
+    public class ListBox_ : ListBox, IUControl, IUControl_Docking, IUControl_ObjectModel
     {
         private readonly Lamedal_WinForms _lamedWin = Lamedal_WinForms.Instance;
 
@@ -94,6 +94,5 @@ namespace Lamedal_UIWinForms.UControl._Designer
             set { _lamedWin.libUI.WinForms.Controls.Control.MoveToContainer(this, value); }
         }
         #endregion
-
     }
 }

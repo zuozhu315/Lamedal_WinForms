@@ -6,7 +6,7 @@ using Lamedal_UIWinForms.UControl._Designer;
 namespace Lamedal_WinFormsControls
 {
     [ProvideToolboxControl("Lamedal_WinFormsControls.lamedCheckBox", false)]
-    public partial class LamedCheckBox : CheckBox_
+    public partial class LamedCheckBox : UserControl
     {
         public LamedCheckBox()
         {

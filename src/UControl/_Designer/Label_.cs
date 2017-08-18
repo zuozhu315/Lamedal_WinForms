@@ -13,8 +13,7 @@ namespace Lamedal_UIWinForms.UControl._Designer
     [Designer(typeof(UControl_Interface_Designer))] // Link the designer   
     [Docking(DockingBehavior.Ask)] // Dock in parent control
     [ToolboxBitmap(typeof(Label))]
-    public sealed class Label_ : Label, IUControl
+    public class Label_ : Label, IUControl
     {
-
     }
 }

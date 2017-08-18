@@ -64,7 +64,6 @@ namespace Lamedal_UIWinForms.UControl.Input
                 //button4.Click += button4_Click;
 
                 pnlLabel.Controls.Add(btnValue1);
-
             }
             btnValue1.Visible = false;
         }
