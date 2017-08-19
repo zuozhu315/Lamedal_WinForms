@@ -65,6 +65,12 @@
     <Compile Include="UControl\zeeForm.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="UControl\zeeFormControls.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UControl\zeeFormCreator.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="UControl\zeeImageList_Setup.cs">
       <SubType>Component</SubType>
     </Compile>
