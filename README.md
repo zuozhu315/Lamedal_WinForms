@@ -15,7 +15,7 @@ Library of WinForms controls
 * `PM> Install-Package Lamedal_UIWinForms`
 * Download vsix install file (to install controls into visual studio): https://github.com/perezLamed/Lamedal_WinForms/blob/master/Documents/Lamedal_WinFormsControls.vsix
 * Related Projects:
-  - https://github.com/perezLamed/LamedalCore_Templates (.NetCore & .Net461 - Simple Template code generation)
+  - https://github.com/perezLamed/LamedalCore_Templates (.NetCore Std1.6 & .Net461 - Simple Template code generation)
   - https://github.com/perezLamed/LamedalCore  (.NetCore & .Net461 - Useful methods for a quick start [Types, IO, Console, c#])
   - https://github.com/perezLamed/Lamedal_Samples (.NetCore & .Net462 - Sample projects)
   
@@ -25,9 +25,9 @@ Library of WinForms controls
 
 Application           |    Platform       | Quality       | Build                 |      Tests        | Coverage 
 ----------------------|-------------------|---------------|-----------------------|-------------------|-----------------------
-LamedalCore_Templates |Windows 10.0 VS2017| ![alt tag](https://www.codefactor.io/repository/github/perezlamed/LamedalCore_Templates/badge)              |![alt tag](https://ci.appveyor.com/api/projects/status/keh56h0rdnv894d9?svg=true) |               | ![Result](https://rawgithub.com/perezLamed/LamedalCore_Templates/master/dotCover/badge_linecoverage.svg)
-LamedalCore           |Windows 10.0 VS2017| ![alt tag](https://www.codefactor.io/repository/github/perezlamed/lamedalcore/badge)              |![alt tag](https://ci.appveyor.com/api/projects/status/5tt4c9sj7dpv5xx5?svg=true) | ![alt tag](https://ci.appveyor.com/api/projects/status/r64leqcijlqfj24h?svg=true) | ![Result](https://rawgithub.com/perezLamed/LamedalCore/master/dotCover/badge_linecoverage.svg)
-Lamedal_WinForms      |Windows 10.0 VS2017| ![alt tag](https://www.codefactor.io/repository/github/perezlamed/Lamedal_WinForms/badge)              |![alt tag](https://ci.appveyor.com/api/projects/status/haxbe8sdqurfx15c?svg=true) |                |             
+LamedalCore_Templates |.NetCore Std1.6 & .Net461| ![alt tag](https://www.codefactor.io/repository/github/perezlamed/LamedalCore_Templates/badge)              |![alt tag](https://ci.appveyor.com/api/projects/status/keh56h0rdnv894d9?svg=true) |               | ![Result](https://rawgithub.com/perezLamed/LamedalCore_Templates/master/dotCover/badge_linecoverage.svg)
+LamedalCore           |.NetCore Std1.6 & .Net461| ![alt tag](https://www.codefactor.io/repository/github/perezlamed/lamedalcore/badge)              |![alt tag](https://ci.appveyor.com/api/projects/status/5tt4c9sj7dpv5xx5?svg=true) | ![alt tag](https://ci.appveyor.com/api/projects/status/r64leqcijlqfj24h?svg=true) | ![Result](https://rawgithub.com/perezLamed/LamedalCore/master/dotCover/badge_linecoverage.svg)
+Lamedal_WinForms      |.NetCore Std1.6 & .Net462| ![alt tag](https://www.codefactor.io/repository/github/perezlamed/Lamedal_WinForms/badge)              |![alt tag](https://ci.appveyor.com/api/projects/status/haxbe8sdqurfx15c?svg=true) |                |             
 
 ## Build History
 ![Build History](https://buildstats.info/appveyor/chart/perezLamed/lamedal-winforms-debug)
