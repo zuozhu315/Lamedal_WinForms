@@ -8,7 +8,7 @@ namespace Lamedal_UIWinForms.UControl.Input
 {
     [System.Security.Permissions.PermissionSet
     (System.Security.Permissions.SecurityAction.Demand, Name = "FullTrust")]
-    public sealed class Input_Control_Designer : ControlDesigner
+    public class Input_Control_Designer : ControlDesigner
     {
         private DesignerActionListCollection actionLists;
         public override DesignerActionListCollection ActionLists

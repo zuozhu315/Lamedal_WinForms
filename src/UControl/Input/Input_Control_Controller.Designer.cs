@@ -7,7 +7,7 @@ using Lamedal_UIWinForms.domain.Events;
 namespace Lamedal_UIWinForms.UControl.Input
 {
     /// <code>CTI;</code>
-    public sealed partial class Input_Control_Controller
+    public partial class Input_Control_Controller
     {
         #region Controls
         // Panels

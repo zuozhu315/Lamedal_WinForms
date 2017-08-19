@@ -14,6 +14,7 @@
     <PackageReleaseNotes>
 Lamedal_UIWinForms v0.0.2 
 =========================
+Alfa3 - Remove 'sealed' from Input_Control.
 Alfa2 - Remove 'sealed' from all user controls to allow extensibility.
 Alfa1 - Fixed ImageSetup and added tooltips. 
     
@@ -39,7 +40,7 @@ Lamedal_UIWinForms v0.0.1
     <GenerateNeutralResourcesLanguageAttribute>false</GenerateNeutralResourcesLanguageAttribute>
     <GenerateAssemblyVersionAttribute>false</GenerateAssemblyVersionAttribute>
     <GenerateAssemblyFileVersionAttribute>false</GenerateAssemblyFileVersionAttribute>
-    <Version>0.0.2-Alfa2</Version>
+    <Version>0.0.2-Alfa3</Version>
     <RepositoryType>c#</RepositoryType>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageTags>WinForms Controls</PackageTags>

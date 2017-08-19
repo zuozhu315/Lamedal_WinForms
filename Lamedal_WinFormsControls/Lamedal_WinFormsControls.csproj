@@ -48,12 +48,42 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="UControl\zeeButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UControl\zeeButtonStandard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="UControl\zeeCheckBox.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ProvideToolboxControlAttribute.cs" />
     <Compile Include="UControl\zeeComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UControl\zeeForm.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UControl\zeeImageList_Setup.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UControl\zeeImageSetup.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UControl\zeeInput_Control.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UControl\zeeLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UControl\zeePanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UControl\zeePanel_Transparent.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UControl\zeeTextBox.cs">
       <SubType>Component</SubType>
     </Compile>
   </ItemGroup>
@@ -98,8 +128,9 @@
       <HintPath>..\packages\LamedalCore_Templates.0.0.4\lib\net461\LamedalCore_Templates.dll</HintPath>
     </Reference>
     <Reference Include="Lamedal_UIWinForms, Version=0.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Lamedal_UIWinForms.0.0.2-Alfa2\lib\net462\Lamedal_UIWinForms.dll</HintPath>
+      <HintPath>..\packages\Lamedal_UIWinForms.0.0.2-Alfa3\lib\net462\Lamedal_UIWinForms.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.VisualStudio.CoreUtility, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.VisualStudio.CoreUtility.15.0.26201\lib\net45\Microsoft.VisualStudio.CoreUtility.dll</HintPath>
       <Private>True</Private>
@@ -119,9 +150,12 @@
     <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Design" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.IO.FileSystem.Primitives, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.IO.FileSystem.Primitives.4.0.1\lib\net46\System.IO.FileSystem.Primitives.dll</HintPath>
@@ -133,8 +167,12 @@
       <HintPath>..\packages\System.Runtime.4.1.0\lib\net462\System.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xaml" />
     <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
     <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
     <Reference Include="xunit.abstractions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c, processorArchitecture=MSIL">
       <HintPath>..\packages\xunit.abstractions.2.0.1\lib\net35\xunit.abstractions.dll</HintPath>
     </Reference>

@@ -1,6 +1,6 @@
 ﻿namespace Lamedal_UIWinForms.UControl.Input
 {
-    sealed partial class Input_Control
+    public partial class Input_Control
     {
         /// <summary> 
         /// Required designer variable.
