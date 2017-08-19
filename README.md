@@ -13,7 +13,7 @@ Library of WinForms controls
 * Project : https://sites.google.com/site/lamedalwiki/
 * Lamedal Nuget package: https://www.nuget.org/packages/Lamedal_UIWinForms/ [![NuGet Badge](https://buildstats.info/nuget/Lamedal_UIWinForms)](https://www.nuget.org/packages/Lamedal_UIWinForms/) 
 * `PM> Install-Package Lamedal_UIWinForms`
-* Download from [Visual Studio Extentions](https://visualstudiogallery.msdn.microsoft.com/4520a77e-9044-4dab-861f-6163c5603c04?redir=0) or directly from this [link](https://github.com/perezLamed/Lamedal_WinForms/blob/master/Documents/Lamedal_WinFormsControls.vsix)
+* Download from [Visual Studio Extentions](https://marketplace.visualstudio.com/vsgallery/4520a77e-9044-4dab-861f-6163c5603c04) or directly from this [link](https://github.com/perezLamed/Lamedal_WinForms/blob/master/Documents/Lamedal_WinFormsControls.vsix)
 * Related Projects:
   - https://github.com/perezLamed/LamedalCore_Templates (.NetCore Std1.6 & .Net461 - Simple Template code generation)
   - https://github.com/perezLamed/LamedalCore  (.NetCore & .Net461 - Useful methods for a quick start [Types, IO, Console, c#])
