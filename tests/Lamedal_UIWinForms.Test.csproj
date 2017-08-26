@@ -104,12 +104,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="temp\Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="temp\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
     <Compile Include="temp\Form2.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -160,9 +154,6 @@
       <DependentUpon>system_Callback_TestsForm.cs</DependentUpon>
     </Compile>
     <Compile Include="tests\libUI_WinForms\WinForms_Tests.cs" />
-    <EmbeddedResource Include="temp\Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="temp\Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
@@ -210,10 +201,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Lamedal_WinFormsControls\Lamedal_WinFormsControls.csproj">
-      <Project>{66cdb5e4-b2b7-49da-a64d-ae6df2a3e3c0}</Project>
-      <Name>Lamedal_WinFormsControls</Name>
-    </ProjectReference>
     <ProjectReference Include="..\src\Lamedal_UIWinForms.csproj">
       <Project>{6ee128e4-96f6-40d4-85c0-235c30ec461c}</Project>
       <Name>Lamedal_UIWinForms</Name>
