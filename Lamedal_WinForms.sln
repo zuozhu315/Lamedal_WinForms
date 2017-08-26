@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26228.9
+VisualStudioVersion = 15.0.26730.8
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lamedal_UIWinForms", "src\Lamedal_UIWinForms.csproj", "{6EE128E4-96F6-40D4-85C0-235C30EC461C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lamedal_UIWinForms", "src\Lamedal_UIWinForms.csproj", "{6EE128E4-96F6-40D4-85C0-235C30EC461C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lamedal_UIWinForms.Test", "tests\Lamedal_UIWinForms.Test.csproj", "{C5B02C31-0A43-4CBF-BA58-7C6CF0CE9A3E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lamedal_WinFormsControls", "Lamedal_WinFormsControls\Lamedal_WinFormsControls.csproj", "{66CDB5E4-B2B7-49DA-A64D-AE6DF2A3E3C0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,8 +23,15 @@ Global
 		{C5B02C31-0A43-4CBF-BA58-7C6CF0CE9A3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C5B02C31-0A43-4CBF-BA58-7C6CF0CE9A3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C5B02C31-0A43-4CBF-BA58-7C6CF0CE9A3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66CDB5E4-B2B7-49DA-A64D-AE6DF2A3E3C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66CDB5E4-B2B7-49DA-A64D-AE6DF2A3E3C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66CDB5E4-B2B7-49DA-A64D-AE6DF2A3E3C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66CDB5E4-B2B7-49DA-A64D-AE6DF2A3E3C0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7899DCE8-1549-4215-9BF6-4681402168FE}
 	EndGlobalSection
 EndGlobal

@@ -5,7 +5,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using LamedalCore;
-using Svg;
 //using TheArtOfDev.HtmlRenderer.WinForms;
 using Xunit;
 
