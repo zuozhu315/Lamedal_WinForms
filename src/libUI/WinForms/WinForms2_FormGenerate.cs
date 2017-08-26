@@ -53,7 +53,7 @@ namespace Lamedal_UIWinForms.libUI.WinForms
         /// </returns>
         public bool AssemblyTypes(Assembly assembly, out List<string> typeNameList, out Dictionary<string, Tuple<Type, Attribute>> typeAttributeDictionary)
         {
-            var attributeToSearch = new BlueprintData_TableAttribute();
+            BlueprintData_TableAttribute attributeToSearch = new BlueprintData_TableAttribute();
             return _dotNet.Assembly.Types(assembly, out typeNameList, out typeAttributeDictionary, filterForThisAttribute: attributeToSearch);
         }
 
@@ -168,7 +168,7 @@ namespace Lamedal_UIWinForms.libUI.WinForms
 
             // For class type, get all fields that was marked with BlueprintData_FieldAttribute
             Input_Control input = null;
-            IList<Tuple<FieldInfo, BlueprintData_FieldAttribute>> fields = LamedalCore_.Instance.Types.Class.ClassAttributes.Find_Fields<BlueprintData_FieldAttribute>(classType);
+            IList<Tuple<FieldInfo, BlueprintData_FieldAttribute>> fields = LamedalCore_.Instance.Types.Class.ClassAttributes.Find_Fields(classType, new BlueprintData_FieldAttribute());
             // List<Tuple<FieldInfo, Attribute>> fields = _dotNet.ClassAttribute.Field_FindAttributes(classType, typeof(BlueprintData_FieldAttribute), class_GenerateAllFields);
             dynamic defaultO = UIDesigner_Form.Create(classType);
             foreach (Tuple<FieldInfo, BlueprintData_FieldAttribute> field in fields)
@@ -246,7 +246,7 @@ namespace Lamedal_UIWinForms.libUI.WinForms
         public Form Form_Generate(IObjectModel classObject, EventHandler<onInputControl_EventArgs> onValueChange = null, enForm_Panels panels = enForm_Panels.OnePanel)
         {
             BlueprintData_TableAttribute attribute;
-            LamedalCore_.Instance.Types.Class.ClassAttributes.Find_Class(classObject.GetType(), out attribute);
+            LamedalCore_.Instance.Types.Class.ClassAttributes.Find_Class(classObject.GetType(), out attribute, new BlueprintData_TableAttribute());
             if (attribute != null) panels = (enForm_Panels)attribute.TotalPanels;
 
 
@@ -281,8 +281,7 @@ namespace Lamedal_UIWinForms.libUI.WinForms
         {
             var type = classObject.GetType();
             BlueprintData_TableAttribute attribute;
-            LamedalCore_.Instance.Types.Class.ClassAttributes.Find_Class(type, out attribute);
-
+            LamedalCore_.Instance.Types.Class.ClassAttributes.Find_Class(type, out attribute, new BlueprintData_TableAttribute());
 
             stateForm state = form.zzState();
             state.onValueChange = onValueChange;

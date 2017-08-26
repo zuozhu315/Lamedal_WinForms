@@ -93,8 +93,8 @@ namespace Lamedal_UIWinForms.lib.dotNet
                     // Filter for attribute
                     if (filterForThisAttribute != null)
                     {
-                        if (LamedalCore_.Instance.Types.Class.ClassAttributes.Find_ForType(classType,out filterForThisAttribute) == enCode_AttributeLocation.None)
-                            found = false;
+                        Attribute filter;
+                        if (LamedalCore_.Instance.Types.Class.ClassAttributes.Find_ForType(classType,out filter, filterForThisAttribute) == enCode_AttributeLocation.None) found = false;
                         else attribute = filterForThisAttribute;   // filter attribute was found, assign it to attribute
                     }
 

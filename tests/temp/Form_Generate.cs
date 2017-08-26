@@ -10,11 +10,17 @@ using System.Windows.Forms;
 
 namespace Lamedal_UIWinForms.Test.temp
 {
-    public partial class Form2 : Form
+    public partial class Form_Generate : Form
     {
-        public Form2()
+        public Form_Generate()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var frm = new FormCreator_SelectClasses_Form(this);
+            frm.ShowDialog();
         }
     }
 }
