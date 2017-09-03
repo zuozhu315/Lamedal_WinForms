@@ -1,9 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-  <Authors>PerezLamed</Authors>
-    <Description>Library of enhancements to the most used .NET462 Winforms controls. 
-    The Input_Control combines a [Label_ and TextBox_] or [Label_ and EditMask] or [Label_ and ComboBox_] or [Label_ and ListBox_] or [Label_ and DateTime] or [Label_ and CheckBox_] or [Label_ and Button_],  or [Label_ and RadioButton] to provide one control that can capture any type of data.
-    </Description>
+  <Authors>PerezLamed</Authors>    
+    <Summary>The Input_Control combines a [Label_ and TextBox_] or [Label_ and EditMask] or [Label_ and ComboBox_] or [Label_ and ListBox_] or [Label_ and DateTime] or [Label_ and CheckBox_] or [Label_ and Button_],  or [Label_ and RadioButton] to provide one control that can capture any type of data.</Summary>
+    <Description>Library of enhancements to the most used .NET462 Winforms controls.</Description>
     <Copyright>MIT license. Copyright (c) 2017 and present - Perez Lamed van Niekerk. https://sites.google.com/site/lamedalwiki/</Copyright>
     <AssemblyTitle>LamedaL WinForms Controls library.</AssemblyTitle>
     <Title>LamedaL WinForms Controls library.</Title>
@@ -12,23 +11,25 @@
     <AssemblyName>Lamedal_UIWinForms</AssemblyName>
     <PackageId>Lamedal_UIWinForms</PackageId>
     <PackageReleaseNotes>
-Lamedal_UIWinForms v0.0.2 
-=========================
-Alfa3 - Remove 'sealed' from Input_Control.
-Alfa2 - Remove 'sealed' from all user controls to allow extensibility.
-Alfa1 - Fixed ImageSetup and added tooltips. 
-    
-Lamedal_UIWinForms v0.0.1 
-=========================
- - Fixes major bugs on windows controls. 
- - Moved to .NET462 in order to fix compatibility errors with .NET Core
- - Added c# editor control
- - Ensure Appveyor build successfully.
- - Controls: CheckBox_, ComboBox_, GroupBox_, Label_, ListBox_, TextBox_, Button_, Button_Standard, Form_, Form_Controls_, ImageList_, ImageSetup, Input_Control, Panel_, Panel_Transparent, Panel_Transparent_Manager. 
+      Lamedal_UIWinForms v0.0.2
+      =========================
+      Alfa5 - added PresentationCore dependency.
+      Alfa4 - Bug fixes.
+      Alfa3 - Remove 'sealed' from Input_Control.
+      Alfa2 - Remove 'sealed' from all user controls to allow extensibility.
+      Alfa1 - Fixed ImageSetup and added tooltips.
 
- Lamedal_UIWinForms v0.0.1-alfa1: First release of Lamedal UI Winforms library.
-</PackageReleaseNotes>
-    <PackageIconUrl>https://sites.google.com/site/lamedalwiki/_/rsrc/1468739635082/config/customLogo.gif</PackageIconUrl>
+      Lamedal_UIWinForms v0.0.1
+      =========================
+      - Fixes major bugs on windows controls.
+      - Moved to .NET462 in order to fix compatibility errors with .NET Core
+      - Added c# editor control
+      - Ensure Appveyor build successfully.
+      - Controls: CheckBox_, ComboBox_, GroupBox_, Label_, ListBox_, TextBox_, Button_, Button_Standard, Form_, Form_Controls_, ImageList_, ImageSetup, Input_Control, Panel_, Panel_Transparent, Panel_Transparent_Manager.
+
+      Lamedal_UIWinForms v0.0.1-alfa1: First release of Lamedal UI Winforms library.
+    </PackageReleaseNotes>
+    <PackageIconUrl>https://github.com/perezLamed/LamedalCore/blob/master/pics/badges/LamedalSmall.png</PackageIconUrl>
     <PackageProjectUrl>https://github.com/perezLamed/Lamedal_WinForms/</PackageProjectUrl>
     <PackageLicenseUrl>https://github.com/perezLamed/Lamedal_WinForms/</PackageLicenseUrl>
     <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
@@ -40,30 +41,25 @@ Lamedal_UIWinForms v0.0.1
     <GenerateNeutralResourcesLanguageAttribute>false</GenerateNeutralResourcesLanguageAttribute>
     <GenerateAssemblyVersionAttribute>false</GenerateAssemblyVersionAttribute>
     <GenerateAssemblyFileVersionAttribute>false</GenerateAssemblyFileVersionAttribute>
-    <Version>0.0.2-Alfa3</Version>
+    <Version>0.0.2-Alfa5</Version>
     <RepositoryType>c#</RepositoryType>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageTags>WinForms Controls</PackageTags>
     <RepositoryUrl>https://github.com/perezLamed/Lamedal_WinForms/</RepositoryUrl>
+    <Platforms>AnyCPU</Platforms>
   </PropertyGroup>
-  <ItemGroup>
-    <None Include="Assets\ResourcesIcons\BlueprintBlocks.ico" />
-    <None Include="Assets\ResourcesIcons\BlueprintProcess.ico" />
-    <None Include="Assets\ResourcesIcons\BlueprintRound.ico" />
-    <None Include="Assets\ResourcesIcons\BlueprintRoundProcess.ico" />
-  </ItemGroup>
   <ItemGroup>
     <PackageReference Include="HtmlRenderer.Core" Version="1.5.0.6" />
     <PackageReference Include="HtmlRenderer.WinForms" Version="1.5.0.6" />
     <PackageReference Include="AvalonEdit" Version="5.0.3" />
     <PackageReference Include="JetBrains.Annotations" Version="10.4.0" />
+    <PackageReference Include="LamedalCore" Version="2.0.0-Alfa1" />
     <PackageReference Include="LamedalCore_Templates" Version="0.0.4" />
     <PackageReference Include="System.Runtime" Version="4.1.0" />
-    <!--<ProjectReference Include="..\..\LamedalCore\src\LamedalCore.csproj" /> -->
-    <Reference Include="PresentationCore">
-      <HintPath>..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\PresentationCore.dll</HintPath>
+    <Reference Include="PresentationCore"></Reference>
+    <Reference Include="PresentationFramework">
+      <Private>false</Private>
     </Reference>
-    <Reference Include="PresentationFramework" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -72,13 +68,21 @@ Lamedal_UIWinForms v0.0.1
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Design" />
     <Reference Include="System.Drawing" />
-    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xaml">
+      <Private>false</Private>
+    </Reference>
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Windows.Forms" />
-    <Reference Include="System.Windows.Forms.DataVisualization" />
-    <Reference Include="WindowsBase" />
-    <Reference Include="WindowsFormsIntegration" />    
+    <Reference Include="System.Windows.Forms.DataVisualization">
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="WindowsBase">
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="WindowsFormsIntegration">
+      <Private>false</Private>
+    </Reference>    
   </ItemGroup>
   <ItemGroup>
     <Compile Update="Assets\ActorBody.Designer.cs">
@@ -398,12 +402,11 @@ Lamedal_UIWinForms v0.0.1
     </EmbeddedResource>
     <EmbeddedResource Update="UControl\images\ImageSetup_FormHelp.resx">
       <DependentUpon>ImageSetup_FormHelp.cs</DependentUpon>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ImageSetup_FormHelp.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Assets\Tools\" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\LamedalCore\src\LamedalCore.csproj" />
   </ItemGroup>
 </Project>
