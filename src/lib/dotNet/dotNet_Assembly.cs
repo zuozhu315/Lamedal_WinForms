@@ -84,6 +84,7 @@ namespace Lamedal_UIWinForms.lib.dotNet
             foreach (Type classType in classTypes)
             {
                 string classTypeName = classType.FullName;
+                if (classTypeName == null) throw new InvalidOperationException($"Error! '{classType}' name can not be null.");
                 if (filterForThisAttribute == null && filterValue == "") typeNameList.Add(classTypeName);
                 else
                 {
