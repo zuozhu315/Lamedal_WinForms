@@ -79,13 +79,14 @@ namespace Lamedal_UIWinForms.libUI.WinForms.UIDesigner
                 return;
             }
 
-            int value, formWidth;
-            if (panels.zValue_AsInt(out value, out formWidth) == false)
-            {
-                // enumValue_Attribute not setup
-                ("Error! enumValue_Attribute not setup for '{0}'".zFormat(panels.ToString())).zOk();
-                return;
-            }
+            var formWidth = panels.zAttribute_AsInt();
+            //int value, formWidth;
+            //if (panels.zAttribute_AsInt(out value, out formWidth) == false)
+            //{
+            //    // enumValue_Attribute not setup
+            //    ("Error! enumValue_Attribute not setup for '{0}'".zFormat(panels.ToString())).zOk();
+            //    return;
+            //}
 
             if (form.Width > formWidth || form.Width < formWidth - 50) form.Width = formWidth;
 
@@ -138,13 +139,14 @@ namespace Lamedal_UIWinForms.libUI.WinForms.UIDesigner
             }
 
             // Setup the form sizes
-            int value, formHeight;
-            if (formSize.zValue_AsInt(out value, out formHeight) == false)
-            {
-                // enumValue_Attribute not setup
-                ("Error! enumValue_Attribute not setup for '{0}'".zFormat(formSize.ToString())).zOk();
-                return;
-            }
+            var formHeight = formSize.zAttribute_AsInt();
+            //int value, formHeight;
+            //if (formSize.zValue_AsInt(out value, out formHeight) == false)
+            //{
+            //    // enumValue_Attribute not setup
+            //    ("Error! enumValue_Attribute not setup for '{0}'".zFormat(formSize.ToString())).zOk();
+            //    return;
+            //}
             if (form.Height > formHeight || form.Height < formHeight - 50) form.Height = formHeight;
         }
 

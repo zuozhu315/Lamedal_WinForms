@@ -4,19 +4,19 @@ namespace Lamedal_UIWinForms.domain.Enumerals
 {
     public enum enForm_Size
     {
-        [enumValue_(150)]
+        [enumInt(150)]
         Tiny,
 
-        [enumValue_(300)]
+        [enumInt(300)]
         Small,
         
-        [enumValue_(450)]
+        [enumInt(450)]
         Medium,
 
-        [enumValue_(600)]
+        [enumInt(600)]
         Big,
 
-        [enumValue_(800)]
+        [enumInt(800)]
         Huge,
 
         Manual

@@ -409,4 +409,7 @@
   <ItemGroup>
     <Folder Include="Assets\Tools\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\LamedalCore\src\LamedalCore.csproj" />
+  </ItemGroup>
 </Project>

@@ -32,5 +32,16 @@ namespace Lamedal_UIWinForms.lib
         private lib2_Registry _Registry;
         #endregion
 
+
+        #region System
+        /// <summary>
+        /// Gets the lib2_System library methods.
+        /// </summary>
+        public lib2_System System
+        {
+            get { return _lib2_System ?? (_lib2_System = new lib2_System()); }
+        }
+        private lib2_System _lib2_System;
+        #endregion
     }
 }
