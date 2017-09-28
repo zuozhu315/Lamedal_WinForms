@@ -121,31 +121,32 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="temp\ClassPersonSampleData.cs" />
-    <Compile Include="temp\enPeopleEducation.cs" />
-    <Compile Include="temp\enPeopleMarriedStatus.cs" />
-    <Compile Include="temp\enPeopleRace.cs" />
-    <Compile Include="temp\enPeopleLanguageRSA.cs" />
-    <Compile Include="temp\enPeopleRaceRSA.cs" />
-    <Compile Include="temp\enPeopleRaceUSA.cs" />
-    <Compile Include="temp\enPeopleSexIndex.cs" />
-    <Compile Include="temp\enPeopleSosialClass.cs" />
-    <Compile Include="temp\enPeopleTitle.cs" />
-    <Compile Include="temp\Form_Generate.cs">
+    <Compile Include="newFeatures\People\ClassPersonSampleData.cs" />
+    <Compile Include="newFeatures\People\enPeopleEducation.cs" />
+    <Compile Include="newFeatures\People\enPeopleMarriedStatus.cs" />
+    <Compile Include="newFeatures\People\enPeopleRace.cs" />
+    <Compile Include="newFeatures\People\enPeopleLanguageRSA.cs" />
+    <Compile Include="newFeatures\People\enPeopleRaceRSA.cs" />
+    <Compile Include="newFeatures\People\enPeopleRaceUSA.cs" />
+    <Compile Include="newFeatures\People\enPeopleSexIndex.cs" />
+    <Compile Include="newFeatures\People\enPeopleSosialClass.cs" />
+    <Compile Include="newFeatures\People\enPeopleTitle.cs" />
+    <Compile Include="newFeatures\People\Form_Generate.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="temp\Form_Generate.Designer.cs">
+    <Compile Include="newFeatures\People\Form_Generate.Designer.cs">
       <DependentUpon>Form_Generate.cs</DependentUpon>
     </Compile>
-    <Compile Include="temp\FormCreator.cs">
+    <Compile Include="newFeatures\People\FormCreator.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="temp\FormCreator_SelectClasses_Form.cs">
+    <Compile Include="newFeatures\People\FormCreator_SelectClasses_Form.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="temp\FormCreator_SelectClasses_Form.Designer.cs">
+    <Compile Include="newFeatures\People\FormCreator_SelectClasses_Form.Designer.cs">
       <DependentUpon>FormCreator_SelectClasses_Form.cs</DependentUpon>
     </Compile>
+    <Compile Include="newFeatures\Spelling\Spelling_Test.cs" />
     <Compile Include="tests\Forms\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -190,10 +191,10 @@
       <DependentUpon>system_Callback_TestsForm.cs</DependentUpon>
     </Compile>
     <Compile Include="tests\libUI_WinForms\WinForms_Tests.cs" />
-    <EmbeddedResource Include="temp\Form_Generate.resx">
+    <EmbeddedResource Include="newFeatures\People\Form_Generate.resx">
       <DependentUpon>Form_Generate.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="temp\FormCreator_SelectClasses_Form.resx">
+    <EmbeddedResource Include="newFeatures\People\FormCreator_SelectClasses_Form.resx">
       <DependentUpon>FormCreator_SelectClasses_Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="tests\Forms\Form1.resx">
