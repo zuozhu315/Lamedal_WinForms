@@ -1,4 +1,4 @@
-﻿namespace Lamedal_UIWinForms.Test.temp
+﻿namespace Lamedal_UIWinForms.Test.newFeatures.People
 {
     public enum enPeopleRaceUSA
     {

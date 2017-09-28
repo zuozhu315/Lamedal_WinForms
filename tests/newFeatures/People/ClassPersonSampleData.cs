@@ -1,12 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using JetBrains.Annotations;
 using LamedalCore.domain.Attributes;
 
-namespace Lamedal_UIWinForms.Test.temp
+namespace Lamedal_UIWinForms.Test.newFeatures.People
 {
     [BlueprintData_Table(true)]
     public class ClassPersonSampleData

@@ -1,14 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Lamedal_UIWinForms.Test.temp
+namespace Lamedal_UIWinForms.Test.newFeatures.People
 {
     public partial class Form_Generate : Form
     {

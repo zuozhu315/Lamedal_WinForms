@@ -8,7 +8,7 @@ using LamedalCore.zz;
 using Lamedal_UIWinForms.domain.Enumerals;
 using Lamedal_UIWinForms.zzz;
 
-namespace Lamedal_UIWinForms.Test.temp
+namespace Lamedal_UIWinForms.Test.newFeatures.People
 {
     public sealed partial class FormCreator_SelectClasses_Form : System.Windows.Forms.Form
     {

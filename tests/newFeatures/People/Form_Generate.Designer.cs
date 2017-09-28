@@ -1,4 +1,4 @@
-﻿namespace Lamedal_UIWinForms.Test.temp
+﻿namespace Lamedal_UIWinForms.Test.newFeatures.People
 {
     partial class Form_Generate
     {
@@ -39,7 +39,7 @@
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.formCreator1 = new Lamedal_UIWinForms.Test.temp.FormCreator();
+            this.formCreator1 = new FormCreator();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.SuspendLayout();

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Lamedal_UIWinForms.Test.temp;
+using Lamedal_UIWinForms.Test.newFeatures.People;
 using Lamedal_UIWinForms.UControl.images;
 
 namespace Lamedal_UIWinForms.Test
