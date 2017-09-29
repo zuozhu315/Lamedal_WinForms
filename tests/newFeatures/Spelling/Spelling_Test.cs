@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
 using DocumentFormat.OpenXml.Wordprocessing;
+using LamedalCore;
+using LamedalCore.domain.Attributes;
 using LamedalCore.zPublicClass.Test;
 using LamedalCore.zz;
 using LamedalCore_Templates;
@@ -19,7 +21,17 @@ namespace Lamedal_UIWinForms.Test.newFeatures.Spelling
 {
     public class Spelling_Test : pcTest
     {
+        private static readonly LamedalCore_ _lamed = LamedalCore_.Instance; // system library
+
         public Spelling_Test(ITestOutputHelper debug = null) : base(debug) { }
+
+        [Fact]
+        [Test_Method("Case_2Title()")]
+        public void Case_Test()
+        {
+            Assert.Equal("Infrastructure of the Project", _lamed.Types.String.Edit.Case_2Title("INFRASTRUCTURE OF THE PROJECT"));
+        }
+
 
         [Fact]
         public void SpellWord_Test()
