@@ -1,7 +1,7 @@
 ﻿using Lamedal_UIWinForms.UControl.button;
 using Lamedal_UIWinForms.UControl._Designer;
 
-namespace Lamedal_UIWinForms.Test.newFeatures.People
+namespace Lamedal_UIWinForms.Test.newFeatures.FormGenerator
 {
     sealed partial class FormCreator_SelectClasses_Form
     {

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace Lamedal_UIWinForms.Test.newFeatures.People
+namespace Lamedal_UIWinForms.Test.newFeatures.FormGenerator
 {
     public partial class Form_Generate : Form
     {

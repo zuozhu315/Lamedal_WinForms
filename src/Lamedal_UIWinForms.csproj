@@ -53,8 +53,7 @@
     <PackageReference Include="HtmlRenderer.WinForms" Version="1.5.0.6" />
     <PackageReference Include="AvalonEdit" Version="5.0.3" />
     <PackageReference Include="JetBrains.Annotations" Version="10.4.0" />
-    <PackageReference Include="LamedalCore" Version="2.0.0-Alfa1" />
-    <PackageReference Include="LamedalCore_Templates" Version="0.0.4" />
+    <PackageReference Include="LamedalCore" Version="2.0.0" />
     <PackageReference Include="System.Runtime" Version="4.1.0" />
     <Reference Include="PresentationCore"></Reference>
     <Reference Include="PresentationFramework">
@@ -408,8 +407,5 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Assets\Tools\" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\LamedalCore\src\LamedalCore.csproj" />
   </ItemGroup>
 </Project>

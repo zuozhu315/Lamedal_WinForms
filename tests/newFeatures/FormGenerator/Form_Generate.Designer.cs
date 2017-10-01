@@ -1,4 +1,4 @@
-﻿namespace Lamedal_UIWinForms.Test.newFeatures.People
+﻿namespace Lamedal_UIWinForms.Test.newFeatures.FormGenerator
 {
     partial class Form_Generate
     {
