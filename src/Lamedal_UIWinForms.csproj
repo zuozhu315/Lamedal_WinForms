@@ -13,11 +13,12 @@
     <PackageReleaseNotes>
       Lamedal_UIWinForms v0.0.2
       =========================
-      Alfa5 - added PresentationCore dependency.
-      Alfa4 - Bug fixes.
-      Alfa3 - Remove 'sealed' from Input_Control.
-      Alfa2 - Remove 'sealed' from all user controls to allow extensibility.
-      Alfa1 - Fixed ImageSetup and added tooltips.
+      - Upgraded to LamedalCore 2.0.2
+      - Added PresentationCore dependency.
+      - Bug fixes.
+      - Remove 'sealed' from Input_Control.
+      - Remove 'sealed' from all user controls to allow extensibility.
+      - Fixed ImageSetup and added tooltips.
 
       Lamedal_UIWinForms v0.0.1
       =========================
@@ -41,7 +42,7 @@
     <GenerateNeutralResourcesLanguageAttribute>false</GenerateNeutralResourcesLanguageAttribute>
     <GenerateAssemblyVersionAttribute>false</GenerateAssemblyVersionAttribute>
     <GenerateAssemblyFileVersionAttribute>false</GenerateAssemblyFileVersionAttribute>
-    <Version>0.0.2-Alfa5</Version>
+    <Version>0.0.2</Version>
     <RepositoryType>c#</RepositoryType>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageTags>WinForms Controls</PackageTags>
@@ -53,7 +54,7 @@
     <PackageReference Include="HtmlRenderer.WinForms" Version="1.5.0.6" />
     <PackageReference Include="AvalonEdit" Version="5.0.3" />
     <PackageReference Include="JetBrains.Annotations" Version="10.4.0" />
-    <PackageReference Include="LamedalCore" Version="2.0.0" />
+    <PackageReference Include="LamedalCore" Version="2.0.2" />
     <PackageReference Include="System.Runtime" Version="4.1.0" />
     <Reference Include="PresentationCore"></Reference>
     <Reference Include="PresentationFramework">

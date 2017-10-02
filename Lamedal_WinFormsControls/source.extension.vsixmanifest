@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="Lamedal_WinFormsControls.PerezLamed.bb246d9c-183a-4512-b2e2-6452e9fd09ae" Version="1.3" Language="en-US" Publisher="Perez Lamed" />
+        <Identity Id="Lamedal_WinFormsControls.PerezLamed.bb246d9c-183a-4512-b2e2-6452e9fd09ae" Version="1.4" Language="en-US" Publisher="Perez Lamed" />
         <DisplayName>Lamedal_WinFormsControls</DisplayName>
         <Description xml:space="preserve">Lamedal Winforms Controls</Description>
         <Icon>Resources\checkbox_16xLG.png</Icon>
