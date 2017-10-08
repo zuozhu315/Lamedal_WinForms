@@ -9,7 +9,7 @@ using Lamedal_UIWinForms.domain.Enumerals;
 
 namespace Lamedal_UIWinForms.lib
 {
-    public class lib2_System : lib_System
+    public class lib2_System 
     {
         private readonly LamedalCore_ _lamed = LamedalCore_.Instance; // system library
 

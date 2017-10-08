@@ -4,13 +4,15 @@
     <Summary>The Input_Control combines a [Label_ and TextBox_] or [Label_ and EditMask] or [Label_ and ComboBox_] or [Label_ and ListBox_] or [Label_ and DateTime] or [Label_ and CheckBox_] or [Label_ and Button_],  or [Label_ and RadioButton] to provide one control that can capture any type of data.</Summary>
     <Description>Library of enhancements to the most used .NET462 Winforms controls.</Description>
     <Copyright>MIT license. Copyright (c) 2017 and present - Perez Lamed van Niekerk. https://sites.google.com/site/lamedalwiki/</Copyright>
-    <AssemblyTitle>LamedaL WinForms Controls library.</AssemblyTitle>
-    <Title>LamedaL WinForms Controls library.</Title>
+    <AssemblyTitle>Lamedal WinForms Controls library.</AssemblyTitle>
+    <Title>Lamedal WinForms Controls library.</Title>
     <Authors>Perez Lamed van Niekerk</Authors>
     <TargetFramework>net462</TargetFramework>
     <AssemblyName>Lamedal_UIWinForms</AssemblyName>
     <PackageId>Lamedal_UIWinForms</PackageId>
     <PackageReleaseNotes>
+      Lamedal_UIWinForms v0.0.3: Small bug fixes.
+
       Lamedal_UIWinForms v0.0.2
       =========================
       - Upgraded to LamedalCore 2.0.2
@@ -42,7 +44,7 @@
     <GenerateNeutralResourcesLanguageAttribute>false</GenerateNeutralResourcesLanguageAttribute>
     <GenerateAssemblyVersionAttribute>false</GenerateAssemblyVersionAttribute>
     <GenerateAssemblyFileVersionAttribute>false</GenerateAssemblyFileVersionAttribute>
-    <Version>0.0.2</Version>
+    <Version>0.0.3</Version>
     <RepositoryType>c#</RepositoryType>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageTags>WinForms Controls</PackageTags>
@@ -50,11 +52,11 @@
     <Platforms>AnyCPU</Platforms>
   </PropertyGroup>
   <ItemGroup>
+    <PackageReference Include="LamedalCore" Version="2.0.3" />
     <PackageReference Include="HtmlRenderer.Core" Version="1.5.0.6" />
     <PackageReference Include="HtmlRenderer.WinForms" Version="1.5.0.6" />
     <PackageReference Include="AvalonEdit" Version="5.0.3" />
     <PackageReference Include="JetBrains.Annotations" Version="10.4.0" />
-    <PackageReference Include="LamedalCore" Version="2.0.2" />
     <PackageReference Include="System.Runtime" Version="4.1.0" />
     <Reference Include="PresentationCore"></Reference>
     <Reference Include="PresentationFramework">
@@ -408,5 +410,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Assets\Tools\" />
+    <Folder Include="libUI\WinForms\Callback\" />
   </ItemGroup>
 </Project>

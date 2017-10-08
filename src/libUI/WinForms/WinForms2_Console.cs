@@ -124,7 +124,7 @@ namespace Lamedal_UIWinForms.libUI.WinForms
             if (state.TextBox != null)
             {
                 var frm = state.TextBox.FindForm();
-                Lamedal_WinForms.Instance.libUI.WinForms.Callback.Method_Move2UI_Thread(frm, () => Textbox_set(state.TextBox, e.Data));
+                Lamedal_WinForms.Instance.libUI.WinForms.Method_Move2UI_Thread(frm, () => Textbox_set(state.TextBox, e.Data));
             } else
             {
                 "Error! Cannot provide feedback for command.".zOk();

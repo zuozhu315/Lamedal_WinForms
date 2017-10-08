@@ -12,18 +12,7 @@ namespace Lamedal_UIWinForms.zzz
     [BlueprintRule_Class(enBlueprint_ClassNetworkType.Transformation_Connector)]
     public static class UIWindows_Shortcut
     {
-        /// <summary>
-        /// Execute the specified Methods.
-        /// </summary>
-        /// <param name="method">The method.</param>
-        /// <param name="interval">The interval.</param>
-        /// <param name="uniqueName">The unique name.</param>
-        /// <param name="resetTimer">if set to <c>true</c> [reset timer].</param>
-        public static void zExecute_Async(this int interval, MethodInvoker method, string uniqueName = "", bool resetTimer = false)
-        {
-            // 500.zExecute_Async(() => methodName(5));
-            Lamedal_WinForms.Instance.libUI.WinForms.Callback.Execute(method, interval, uniqueName, resetTimer);
-        }
+        
 
         /// <summary>
         /// Move Method to UI Thread. If method was called on UI thread true is returned.
@@ -33,7 +22,7 @@ namespace Lamedal_UIWinForms.zzz
         /// <returns></returns>
         public static bool zCallback_Method_Move2UI_Thread(this Control control, MethodInvoker method)
         {
-            return Lamedal_WinForms.Instance.libUI.WinForms.Callback.Method_Move2UI_Thread(control, method);
+            return Lamedal_WinForms.Instance.libUI.WinForms.Method_Move2UI_Thread(control, method);
         }
 
         /// <summary>
@@ -45,7 +34,7 @@ namespace Lamedal_UIWinForms.zzz
         /// <code>CTIN_Transformation;</code>
         public static bool zControlIsNotOnMainThread(this Control control, bool showMsg = false)
         {
-            return Lamedal_WinForms.Instance.libUI.WinForms.Callback.Control_IsNotOnMainThread(control, showMsg);
+            return Lamedal_WinForms.Instance.libUI.WinForms.Control_IsNotOnMainThread(control, showMsg);
         }
 
         /// <summary>

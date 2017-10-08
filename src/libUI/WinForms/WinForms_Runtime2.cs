@@ -3,11 +3,12 @@ using System.Windows.Forms;
 using LamedalCore.domain.Attributes;
 using LamedalCore.domain.Enumerals;
 using LamedalCore.lib;
+using LamedalCore.lib.system;
 
 namespace Lamedal_UIWinForms.libUI.WinForms
 {
     [BlueprintRule_Class(enBlueprint_ClassNetworkType.Node_Action)]
-    public sealed class WinForms_Runtime2 : lib_Runtime
+    public sealed class WinForms_Runtime2 : system_Runtime
     {
         private readonly Lamedal_WinForms _lamedWin = Lamedal_WinForms.Instance;
 

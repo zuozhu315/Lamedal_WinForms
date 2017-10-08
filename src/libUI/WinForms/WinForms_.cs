@@ -1,26 +1,15 @@
-﻿using LamedalCore.domain.Attributes;
+﻿using System.Windows.Forms;
+using LamedalCore.domain.Attributes;
 using LamedalCore.domain.Enumerals;
-using Lamedal_UIWinForms.libUI.WinForms.Callback;
 using Lamedal_UIWinForms.libUI.WinForms.Controls;
 using Lamedal_UIWinForms.libUI.WinForms.WinDB;
+using Lamedal_UIWinForms.zzz;
 
 namespace Lamedal_UIWinForms.libUI.WinForms
 {
     [BlueprintRule_Class(enBlueprint_ClassNetworkType.Undefined)]
     public sealed class WinForms_
     {
-
-        #region Callback
-        /// <summary>
-        /// Gets the Callback library methods.
-        /// </summary>
-        public Callback_ Callback
-        {
-            get { return _WinCallback ?? (_WinCallback = new Callback_()); }
-        }
-        private Callback_ _WinCallback;
-        #endregion
-
 
         #region Dialog_Simple
         /// <summary>
@@ -176,5 +165,37 @@ namespace Lamedal_UIWinForms.libUI.WinForms
         private WinForms2_Setting _Setting;
         #endregion
 
+        /// <summary>
+        /// Move Method to UI Thread. If method was called on UI thread true is returned.
+        /// </summary>
+        /// <param name="control">The FRM.</param>
+        /// <param name="method">The method.</param>
+        /// <returns>True if the method was called on the UI threand</returns>
+        public bool Method_Move2UI_Thread(Control control, MethodInvoker method)
+        {
+            // if (Method_Move2UI_Thread(control, methodName)) return;     // Call this method on the UI thread
+            if (control.InvokeRequired)
+            {
+                control.Invoke(new MethodInvoker(method)); //{ sender, e }
+                return true;
+            }
+            return false;
+        }
+
+        /// <summary>
+        /// Determines whether the control is on main thread.
+        /// </summary>
+        /// <param name="control">The control</param>
+        /// <param name="showMsg">Show msg indicator. Default value = false.</param>
+        /// <returns>bool</returns>
+        public bool Control_IsNotOnMainThread(Control control, bool showMsg = false)
+        {
+            if (control.InvokeRequired)
+            {
+                if (showMsg) "Error! Not on main thread.".zOk();
+                return true;
+            }
+            return false;
+        }
     }
 }
