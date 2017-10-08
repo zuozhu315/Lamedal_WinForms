@@ -1,4 +1,4 @@
-# ![alt tag](https://github.com/perezLamed/LamedalCore/blob/master/pics/badges/LamedalSmall.png) Lamedal_UIWinForms 0.0.1
+# ![alt tag](https://github.com/perezLamed/LamedalCore/blob/master/pics/badges/LamedalSmall.png) Lamedal_UIWinForms 0.0.3
 Library of WinForms controls
 -------------------------------------------------------------------------------------
 > <i> The **best programmers** in the world can deliver software before deadlines, under budget, 
@@ -26,8 +26,8 @@ Library of WinForms controls
 Application           |    Platform       | Quality       | Build                 |      Tests        | Coverage 
 ----------------------|-------------------|---------------|-----------------------|-------------------|-----------------------
 LamedalCore_Templates |.NetCore Std1.6 & .Net461| ![alt tag](https://www.codefactor.io/repository/github/perezlamed/LamedalCore_Templates/badge)              |![alt tag](https://ci.appveyor.com/api/projects/status/keh56h0rdnv894d9?svg=true) |               | ![Result](https://rawgithub.com/perezLamed/LamedalCore_Templates/master/dotCover/badge_linecoverage.svg)
-LamedalCore           |.NetCore Std1.6 & .Net461| ![alt tag](https://www.codefactor.io/repository/github/perezlamed/lamedalcore/badge)              |![alt tag](https://ci.appveyor.com/api/projects/status/5tt4c9sj7dpv5xx5?svg=true) | ![alt tag](https://ci.appveyor.com/api/projects/status/r64leqcijlqfj24h?svg=true) | ![Result](https://rawgithub.com/perezLamed/LamedalCore/master/dotCover/badge_linecoverage.svg)
-Lamedal_WinForms      |.NetCore Std1.6 & .Net462| ![alt tag](https://www.codefactor.io/repository/github/perezlamed/Lamedal_WinForms/badge)              |![alt tag](https://ci.appveyor.com/api/projects/status/haxbe8sdqurfx15c?svg=true) |                |             
+LamedalCore           |.NetCore Std2.0 & .Net461| ![alt tag](https://www.codefactor.io/repository/github/perezlamed/lamedalcore/badge)              |![alt tag](https://ci.appveyor.com/api/projects/status/5tt4c9sj7dpv5xx5?svg=true) | ![alt tag](https://ci.appveyor.com/api/projects/status/r64leqcijlqfj24h?svg=true) | ![Result](https://rawgithub.com/perezLamed/LamedalCore/master/dotCover/badge_linecoverage.svg)
+Lamedal_WinForms      |.Net462| ![alt tag](https://www.codefactor.io/repository/github/perezlamed/Lamedal_WinForms/badge)              |![alt tag](https://ci.appveyor.com/api/projects/status/haxbe8sdqurfx15c?svg=true) |                |             
 
 ## Build History
 ![Build History](https://buildstats.info/appveyor/chart/perezLamed/lamedal-winforms-debug)
